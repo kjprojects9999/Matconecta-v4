@@ -56,15 +56,18 @@ async def lifespan(_:FastAPI):
     yield
 
 app=FastAPI(title="Matconecta API",version="4.0.0",description="Plataforma educacional de matemática.",lifespan=lifespan)
-app.add_middleware(CORSMiddleware,allow_origins=["http://127.0.0.1:8000","http://localhost:8000"],allow_credentials=True,allow_methods=["*"],allow_headers=["*"])
+_origins = [x.strip() for x in os.getenv("APP_ORIGINS", "").split(",") if x.strip()]
+if not _origins:
+    _origins = ["http://127.0.0.1:8000", "http://localhost:8000"]
+app.add_middleware(CORSMiddleware, allow_origins=_origins, allow_credentials=False, allow_methods=["*"], allow_headers=["*"])
 
 @app.get("/api/health")
 def health():
     try:
         db_ping()
         with session_scope() as db:
-            return {"status":"ok","database":"mysql","subjects":db.scalar(select(func.count()).select_from(Assunto)) or 0,"questions":db.scalar(select(func.count()).select_from(Questao).where(Questao.assunto_id.is_not(None))) or 0,"foundation_questions":db.scalar(select(func.count()).select_from(Questao).where(Questao.assunto_id.is_(None))) or 0}
-    except Exception as e: raise HTTPException(503,"Banco de dados indisponível. Verifique o MySQL e o arquivo .env.") from e
+            return {"status":"ok","database":"mysql/mariadb","subjects":db.scalar(select(func.count()).select_from(Assunto)) or 0,"questions":db.scalar(select(func.count()).select_from(Questao).where(Questao.assunto_id.is_not(None))) or 0,"foundation_questions":db.scalar(select(func.count()).select_from(Questao).where(Questao.assunto_id.is_(None))) or 0}
+    except Exception as e: raise HTTPException(503,"Banco de dados indisponível. Verifique o MySQL/MariaDB e a configuração de DATABASE_URL.") from e
 
 @app.post("/api/auth/register")
 def register(data:RegisterIn):
