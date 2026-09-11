@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Matconecta — plataforma de matemática para aprender, praticar e acompanhar evolução.">
+<meta name="theme-color" content="#f5f7fb">
+<link id="favicon" rel="icon" type="image/webp">
+<title>Matconecta — Matemática com método</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="ambient ambient-one" aria-hidden="true"></div>
+<div class="ambient ambient-two" aria-hidden="true"></div>
+<div class="ambient-three" aria-hidden="true"></div>
+<div class="ambient-grid" aria-hidden="true"></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="wrap nav">
+    <button id="brand" class="brand" aria-label="Voltar ao painel">
+      <span class="brand-logo-wrap"><img id="brandLogo" class="brand-logo" alt="ETE — Escola Técnica Estadual"></span>
+      <span class="brand-copy"><b>Matconecta</b><small>Matemática com método</small></span>
+    </button>
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Ativar tema escuro" title="Alternar tema">
+        <span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Tema</span>
+      </button>
+      <div id="userbar" class="userbar hidden">
+        <span id="avatar" class="avatar">A</span>
+        <div class="user-meta"><b id="username">Aluno</b><small id="userserie">1º Ano</small></div>
+        <span class="points"><span aria-hidden="true">★</span> <b id="userpoints">0</b></span>
+        <button id="logout" class="icon-btn" title="Sair" aria-label="Sair">↪</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+<section id="auth" class="view auth">
+  <div class="auth-intro reveal">
+    <div class="brand-hero">
+      <span class="hero-logo"><img id="authLogo" alt="ETE — Escola Técnica Estadual"></span>
+      <span><b>ESCOLA TÉCNICA ESTADUAL</b><small>Ambiente de aprendizagem</small></span>
+    </div>
+    <span class="eyebrow">PLATAFORMA EDUCACIONAL</span>
+    <h1>Aprenda matemática entendendo o <em>porquê.</em></h1>
+    <p>Uma experiência pensada para transformar teoria em domínio: conteúdo claro, prática guiada e uma jornada que acompanha sua evolução.</p>
+    <div class="value-row" aria-label="Recursos principais">
+      <span><i>✓</i> Teoria clara</span>
+      <span><i>✓</i> Prática guiada</span>
+      <span><i>✓</i> Progresso salvo</span>
+    </div>
+    <div class="math-orbit" aria-hidden="true">
+      <span class="symbol s1">π</span><span class="symbol s2">∑</span><span class="symbol s3">√</span><span class="symbol s4">x²</span><span class="symbol s5">∞</span>
+    </div>
+  </div>
+
+  <div class="panel auth-panel reveal reveal-delay-1">
+    <div class="panel-glow" aria-hidden="true"></div>
+    <div class="tabs" role="tablist" aria-label="Autenticação">
+      <button id="loginTab" class="active" type="button" role="tab" aria-selected="true">Entrar</button>
+      <button id="registerTab" type="button" role="tab" aria-selected="false">Criar conta</button>
+    </div>
+    <form id="loginForm" novalidate>
+      <div class="form-heading"><span class="eyebrow">BEM-VINDO DE VOLTA</span><h2>Continue sua jornada.</h2></div>
+      <label>Nome<input id="loginName" required autocomplete="username" placeholder="Seu nome"></label>
+      <label>Senha<input id="loginPass" type="password" required autocomplete="current-password" placeholder="Sua senha"></label>
+      <button class="primary wide" type="submit"><span>Entrar no Matconecta</span><b>→</b></button>
+    </form>
+    <form id="registerForm" class="hidden" novalidate>
+      <div class="form-heading"><span class="eyebrow">COMECE AGORA</span><h2>Crie seu espaço.</h2></div>
+      <label>Nome completo<input id="regName" required minlength="3" maxlength="120" placeholder="Seu nome"></label>
+      <label>Série<select id="regSerie"><option value="1">1º Ano</option><option value="2">2º Ano</option><option value="3">3º Ano</option></select></label>
+      <label>Senha<input id="regPass" type="password" minlength="8" maxlength="128" required placeholder="Mínimo de 8 caracteres"></label>
+      <button class="primary wide" type="submit"><span>Criar minha conta</span><b>→</b></button>
+    </form>
+    <p class="micro"><span class="secure-dot">●</span> Seu progresso é salvo com segurança no projeto.</p>
+  </div>
+</section>
+
+<section id="dashboard" class="view hidden">
+  <div class="hero dashboard-hero reveal">
+    <div>
+      <span class="eyebrow">PAINEL DO ALUNO</span>
+      <h1>Olá, <span id="welcome">Aluno</span>.</h1>
+      <p>Comece pela base, avance por ano e transforme cada erro em um próximo passo.</p>
+    </div>
+    <div class="formula-card" aria-label="Fórmulas matemáticas">
+      <span>Seu espaço para pensar</span><strong>a² + b² = c²</strong><small>f(x) = ax + b</small>
+    </div>
+  </div>
+
+  <div class="stats reveal reveal-delay-1">
+    <article><span class="stat-icon">★</span><small>PONTOS</small><b id="statScore">0</b><span>acumulados</span></article>
+    <article><span class="stat-icon">↗</span><small>SIMULADOS</small><b id="statAttempts">0</b><span>concluídos</span></article>
+    <article><span class="stat-icon">◒</span><small>MELHOR</small><b id="statBest">0%</b><span>aproveitamento</span></article>
+  </div>
+
+  <div class="section-title reveal">
+    <div><span class="eyebrow">COMECE AQUI</span><h2>Matemática básica</h2><p>Construa os fundamentos que deixam o restante da matemática mais fácil.</p></div>
+    <span class="section-line" aria-hidden="true"></span>
+  </div>
+  <div id="foundationTopics" class="topic-grid"></div>
+
+  <div class="section-title years-title reveal">
+    <div><span class="eyebrow">TRILHA DO ENSINO MÉDIO</span><h2>Escolha seu ano</h2><p>Avance no seu ritmo e acompanhe o que já foi praticado.</p></div>
+    <span class="section-line" aria-hidden="true"></span>
+  </div>
+  <div id="years" class="year-grid"></div>
+</section>
+
+<section id="subjects" class="view hidden">
+  <div class="backrow"><button id="backDash" type="button">← Painel</button><span id="subjectKicker" class="eyebrow"></span></div>
+  <div class="section-title big reveal"><div><span class="eyebrow">TRILHA DE APRENDIZAGEM</span><h1 id="subjectTitle"></h1><p>Leia a teoria antes do simulado. Depois use seus erros como guia de revisão.</p></div></div>
+  <div id="subjectList" class="subject-list"></div>
+</section>
+
+<section id="theory" class="view hidden">
+  <div class="backrow"><button id="backSubjects" type="button">← Assuntos</button><span class="eyebrow">TEORIA</span></div>
+  <article class="theory panel reveal">
+    <div class="theory-head"><span id="theoryKicker" class="eyebrow"></span><span class="reading-badge">LEITURA GUIADA</span></div>
+    <h1 id="theoryTitle"></h1><p id="theorySummary" class="lead"></p><div id="theoryBody"></div>
+    <div class="theory-cta"><div><b>Agora aplique.</b><span>Faça o simulado e descubra o que já domina.</span></div><button id="theoryQuiz" class="primary" type="button">Começar simulado <b>→</b></button></div>
+  </article>
+</section>
+
+<section id="quiz" class="view hidden">
+  <div class="backrow"><button id="quitQuiz" type="button">← Sair do simulado</button><span id="quizKicker" class="eyebrow">SIMULADO</span><span id="counter" class="counter"></span></div>
+  <div class="quiz-progress"><div class="progress"><span id="progress"></span></div><span id="progressLabel">Questão 1</span></div>
+  <article class="quiz panel reveal">
+    <div class="qtop"><span>QUESTÃO</span><b id="qnumber">01</b><span class="question-hint">Escolha uma alternativa</span></div>
+    <h1 id="question"></h1>
+    <div id="options" class="options"></div>
+    <div id="feedback" class="feedback hidden" role="status"><b id="feedbackTitle"></b><p id="feedbackText"></p></div>
+  </article>
+  <div class="quiz-actions"><span class="answer-status" id="answerStatus">Selecione uma alternativa para continuar.</span><button id="next" class="primary" type="button" disabled>Próxima</button></div>
+</section>
+
+<section id="result" class="view hidden">
+  <article class="result panel reveal">
+    <span class="result-mark">✓</span><span class="eyebrow">SIMULADO CONCLUÍDO</span><div id="resultScore" class="result-score">0%</div>
+    <h1 id="resultTitle"></h1><p id="resultMessage"></p>
+    <div class="result-grid"><div><small>ACERTOS</small><b id="resultCorrect">0/0</b></div><div><small>PONTOS</small><b id="resultPoints">+0</b></div></div>
+    <div class="result-actions"><button id="repeat" class="primary" type="button">Refazer <b>↻</b></button><button id="home" class="secondary" type="button">Voltar ao painel</button></div>
+  </article>
+</section>
+</main>
+
+<div id="confirmModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+  <div class="modal-backdrop" data-close-confirm></div>
+  <div class="confirm-card">
+    <span class="confirm-icon">?</span><span class="eyebrow">CONFIRMAR RESPOSTA</span><h2 id="confirmTitle">Você quer confirmar esta alternativa?</h2>
+    <div class="selected-answer"><span id="confirmLetter">A</span><p id="confirmAnswer">Alternativa selecionada</p></div>
+    <p class="confirm-note">Depois de confirmar, a resposta será enviada e não poderá ser alterada nesta questão.</p>
+    <div class="confirm-actions"><button id="cancelConfirm" class="secondary" type="button">Voltar</button><button id="confirmAnswerBtn" class="primary" type="button">Confirmar resposta <b>→</b></button></div>
+  </div>
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="/script.js" defer></script>
+</body>
+</html>

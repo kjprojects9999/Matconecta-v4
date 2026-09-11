@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS matconecta_v4 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER IF NOT EXISTS 'matconecta'@'localhost' IDENTIFIED BY 'CHANGE_ME';
+CREATE USER IF NOT EXISTS 'matconecta'@'127.0.0.1' IDENTIFIED BY 'CHANGE_ME';
+ALTER USER 'matconecta'@'localhost' IDENTIFIED BY 'CHANGE_ME';
+ALTER USER 'matconecta'@'127.0.0.1' IDENTIFIED BY 'CHANGE_ME';
+GRANT ALL PRIVILEGES ON matconecta_v4.* TO 'matconecta'@'localhost';
+GRANT ALL PRIVILEGES ON matconecta_v4.* TO 'matconecta'@'127.0.0.1';
+FLUSH PRIVILEGES;

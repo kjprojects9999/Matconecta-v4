@@ -1,0 +1,3496 @@
+{
+  "foundation_topics": [
+    {
+      "id": "n1",
+      "title": "Operações e ordem de operações",
+      "summary": "Somar, subtrair, multiplicar e dividir com segurança.",
+      "theory": "Priorize parênteses, depois potências/raízes, depois multiplicação/divisão e por fim soma/subtração. Operações da mesma prioridade são resolvidas da esquerda para a direita."
+    },
+    {
+      "id": "n2",
+      "title": "Frações e números decimais",
+      "summary": "Comparar, simplificar e operar frações e decimais.",
+      "theory": "Para somar frações, use denominador comum. Na multiplicação, multiplique numeradores e denominadores. Decimal finito pode ser convertido em fração com potência de 10 no denominador."
+    },
+    {
+      "id": "n3",
+      "title": "Razão, proporção e regra de três",
+      "summary": "Resolver relações proporcionais em situações reais.",
+      "theory": "Uma razão compara grandezas. Em proporções, produtos cruzados são úteis: a/b=c/d implica ad=bc. Antes de calcular, decida se a relação é direta ou inversa."
+    },
+    {
+      "id": "n4",
+      "title": "Porcentagem e finanças básicas",
+      "summary": "Desconto, aumento, juros simples e leitura de preços.",
+      "theory": "Percentual é uma razão sobre 100. Aumento de p% usa fator 1+p/100; desconto usa 1−p/100. Juros simples: J=C·i·t e montante M=C+J."
+    },
+    {
+      "id": "n5",
+      "title": "Potenciação e radiciação",
+      "summary": "Entender expoentes, propriedades e raízes.",
+      "theory": "Potência representa multiplicação repetida. Em a^m·a^n somamos expoentes; em (a^m)^n multiplicamos. Raiz quadrada procura o número não negativo cujo quadrado produz o radicando."
+    },
+    {
+      "id": "n6",
+      "title": "Expressões algébricas",
+      "summary": "Traduzir problemas para linguagem matemática.",
+      "theory": "Termos semelhantes podem ser somados. Distributiva: a(b+c)=ab+ac. Substituição exige colocar o valor no lugar da variável e respeitar a ordem de operações."
+    },
+    {
+      "id": "n7",
+      "title": "Equações do 1º grau",
+      "summary": "Encontrar uma incógnita em situações do cotidiano.",
+      "theory": "A ideia central é manter a igualdade equilibrada. Faça a mesma operação nos dois lados. Ao final, substitua a solução na equação original para conferir."
+    },
+    {
+      "id": "n8",
+      "title": "Média, tabelas e gráficos",
+      "summary": "Interpretar dados e evitar conclusões apressadas.",
+      "theory": "Média é soma dividida pela quantidade. Leia título, eixos, unidades e escala dos gráficos antes de interpretar tendências."
+    },
+    {
+      "id": "n9",
+      "title": "Medidas, unidades e geometria",
+      "summary": "Converter unidades e calcular perímetro, área e volume.",
+      "theory": "Comprimento usa unidades lineares; área, quadradas; volume, cúbicas. Perímetro mede contorno; área mede superfície; volume mede espaço ocupado."
+    },
+    {
+      "id": "n10",
+      "title": "Problemas do cotidiano",
+      "summary": "Desenvolver estratégia de resolução e estimativa.",
+      "theory": "Leia o problema duas vezes, destaque dados, descubra o que se pede, escolha uma estratégia, calcule, confira unidade e plausibilidade e só então apresente a resposta."
+    }
+  ],
+  "foundation": [
+    {
+      "id": 1,
+      "q": "Quanto é 18 + 27 ÷ 3?",
+      "options": [
+        "15",
+        "21",
+        "27",
+        "45"
+      ],
+      "correct": 2,
+      "exp": "Primeiro a divisão: 27÷3=9. Depois 18+9=27. Portanto, a resposta é C."
+    },
+    {
+      "id": 2,
+      "q": "Qual é o resultado de (8−3)·4?",
+      "options": [
+        "8",
+        "12",
+        "20",
+        "32"
+      ],
+      "correct": 2,
+      "exp": "Resolva o parêntese: 8−3=5. Depois 5·4=20."
+    },
+    {
+      "id": 3,
+      "q": "Quanto é 3² + 4²?",
+      "options": [
+        "7",
+        "12",
+        "25",
+        "49"
+      ],
+      "correct": 2,
+      "exp": "3²=9 e 4²=16. Então 9+16=25."
+    },
+    {
+      "id": 4,
+      "q": "Uma conta de R$ 80 recebe desconto de 10%. Qual o novo valor?",
+      "options": [
+        "R$ 8",
+        "R$ 70",
+        "R$ 72",
+        "R$ 88"
+      ],
+      "correct": 2,
+      "exp": "10% de 80 é 8. Subtraindo: 80−8=72."
+    },
+    {
+      "id": 5,
+      "q": "Qual fração é equivalente a 3/4?",
+      "options": [
+        "6/10",
+        "9/12",
+        "12/20",
+        "15/24"
+      ],
+      "correct": 1,
+      "exp": "Multiplicar 3 e 4 por 3 produz 9/12, mantendo a mesma razão."
+    },
+    {
+      "id": 6,
+      "q": "Qual é 1/2 + 1/4?",
+      "options": [
+        "1/6",
+        "2/6",
+        "3/4",
+        "1"
+      ],
+      "correct": 2,
+      "exp": "Use denominador 4: 1/2=2/4. Então 2/4+1/4=3/4."
+    },
+    {
+      "id": 7,
+      "q": "Se 5 cadernos custam R$ 40, quanto custam 8 pelo mesmo preço unitário?",
+      "options": [
+        "R$ 48",
+        "R$ 56",
+        "R$ 64",
+        "R$ 72"
+      ],
+      "correct": 2,
+      "exp": "Cada caderno custa 40/5=8. Para 8: 8·8=64."
+    },
+    {
+      "id": 8,
+      "q": "25% de 200 corresponde a:",
+      "options": [
+        "25",
+        "40",
+        "50",
+        "75"
+      ],
+      "correct": 2,
+      "exp": "25%=1/4. Um quarto de 200 é 50."
+    },
+    {
+      "id": 9,
+      "q": "Um produto de R$ 100 aumenta 20%. Qual o novo preço?",
+      "options": [
+        "R$ 110",
+        "R$ 115",
+        "R$ 120",
+        "R$ 125"
+      ],
+      "correct": 2,
+      "exp": "20% de 100 é 20. Novo preço: 100+20=120."
+    },
+    {
+      "id": 10,
+      "q": "Se x+7=19, então x é:",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "correct": 2,
+      "exp": "Subtraindo 7 dos dois lados: x=19−7=12."
+    },
+    {
+      "id": 11,
+      "q": "Quanto é 3/5 em decimal?",
+      "options": [
+        "0,3",
+        "0,5",
+        "0,6",
+        "1,5"
+      ],
+      "correct": 2,
+      "exp": "3 dividido por 5 é 0,6."
+    },
+    {
+      "id": 12,
+      "q": "Qual é a forma simplificada de 12/18?",
+      "options": [
+        "2/3",
+        "3/4",
+        "4/5",
+        "6/9"
+      ],
+      "correct": 0,
+      "exp": "Divida numerador e denominador por 6: 12/18=2/3."
+    },
+    {
+      "id": 13,
+      "q": "Uma receita para 4 pessoas usa 300 g de arroz. Para 8 pessoas, mantendo a proporção, usa:",
+      "options": [
+        "450 g",
+        "500 g",
+        "600 g",
+        "800 g"
+      ],
+      "correct": 2,
+      "exp": "Dobrou o número de pessoas, então dobra a quantidade: 300·2=600 g."
+    },
+    {
+      "id": 14,
+      "q": "Juros simples de 5% ao mês sobre R$ 200 durante 2 meses são:",
+      "options": [
+        "R$ 10",
+        "R$ 20",
+        "R$ 25",
+        "R$ 40"
+      ],
+      "correct": 1,
+      "exp": "J=C·i·t=200·0,05·2=20."
+    },
+    {
+      "id": 15,
+      "q": "Qual é √81?",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct": 2,
+      "exp": "9·9=81, portanto √81=9."
+    },
+    {
+      "id": 16,
+      "q": "Quanto vale 2³·2²?",
+      "options": [
+        "16",
+        "32",
+        "64",
+        "128"
+      ],
+      "correct": 1,
+      "exp": "Mesma base: somamos expoentes. 2^(3+2)=2⁵=32."
+    },
+    {
+      "id": 17,
+      "q": "Simplifique 3x+2x−4.",
+      "options": [
+        "5x−4",
+        "6x−4",
+        "5x+4",
+        "x−4"
+      ],
+      "correct": 0,
+      "exp": "3x e 2x são termos semelhantes: 3x+2x=5x."
+    },
+    {
+      "id": 18,
+      "q": "Se 2(x+3)=14, x vale:",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "correct": 0,
+      "exp": "Divida por 2: x+3=7. Então x=4. A alternativa correta é B."
+    },
+    {
+      "id": 19,
+      "q": "A média de 6, 8 e 10 é:",
+      "options": [
+        "6",
+        "8",
+        "9",
+        "24"
+      ],
+      "correct": 1,
+      "exp": "Somamos 6+8+10=24 e dividimos por 3: média=8."
+    },
+    {
+      "id": 20,
+      "q": "Um retângulo mede 5 m por 3 m. Sua área é:",
+      "options": [
+        "8 m²",
+        "15 m²",
+        "16 m²",
+        "30 m²"
+      ],
+      "correct": 1,
+      "exp": "Área do retângulo = base·altura=5·3=15 m²."
+    },
+    {
+      "id": 21,
+      "q": "Uma camiseta de R$ 120 teve desconto de 25%. O preço final é:",
+      "options": [
+        "R$ 30",
+        "R$ 90",
+        "R$ 95",
+        "R$ 100"
+      ],
+      "correct": 1,
+      "exp": "25% de 120=30. Então 120−30=90."
+    },
+    {
+      "id": 22,
+      "q": "Qual é o perímetro de um quadrado de lado 6 cm?",
+      "options": [
+        "12 cm",
+        "18 cm",
+        "24 cm",
+        "36 cm"
+      ],
+      "correct": 2,
+      "exp": "Perímetro do quadrado=4·lado=24 cm."
+    },
+    {
+      "id": 23,
+      "q": "Se 3 kg de maçã custam R$ 18, o preço por kg é:",
+      "options": [
+        "R$ 5",
+        "R$ 6",
+        "R$ 7",
+        "R$ 9"
+      ],
+      "correct": 1,
+      "exp": "18/3=6 reais por kg."
+    },
+    {
+      "id": 24,
+      "q": "Qual expressão representa “o dobro de x mais 5”?",
+      "options": [
+        "2(x+5)",
+        "x+10",
+        "2x+5",
+        "2x−5"
+      ],
+      "correct": 2,
+      "exp": "O dobro de x é 2x; depois somamos 5: 2x+5."
+    },
+    {
+      "id": 25,
+      "q": "Um tanque tem 2,5 L. Isso equivale a:",
+      "options": [
+        "25 mL",
+        "250 mL",
+        "2500 mL",
+        "25000 mL"
+      ],
+      "correct": 2,
+      "exp": "1 L=1000 mL, então 2,5 L=2500 mL."
+    },
+    {
+      "id": 26,
+      "q": "Se uma prova tem 20 questões e o aluno acerta 15, seu percentual de acertos é:",
+      "options": [
+        "50%",
+        "60%",
+        "75%",
+        "80%"
+      ],
+      "correct": 2,
+      "exp": "15/20=0,75=75%."
+    },
+    {
+      "id": 27,
+      "q": "Uma distância de 3,2 km corresponde a:",
+      "options": [
+        "32 m",
+        "320 m",
+        "3200 m",
+        "32000 m"
+      ],
+      "correct": 2,
+      "exp": "1 km=1000 m, então 3,2 km=3200 m."
+    },
+    {
+      "id": 28,
+      "q": "Qual é a solução de 5x−10=0?",
+      "options": [
+        "−2",
+        "0",
+        "2",
+        "10"
+      ],
+      "correct": 2,
+      "exp": "5x=10, portanto x=2."
+    },
+    {
+      "id": 29,
+      "q": "Uma loja aumenta um preço de R$ 50 em 10%. O aumento é:",
+      "options": [
+        "R$ 5",
+        "R$ 10",
+        "R$ 15",
+        "R$ 55"
+      ],
+      "correct": 0,
+      "exp": "10% de 50 é 5."
+    },
+    {
+      "id": 30,
+      "q": "Em um gráfico, o eixo vertical geralmente indica:",
+      "options": [
+        "a categoria ou variável independente",
+        "a escala de uma grandeza medida",
+        "sempre o tempo",
+        "sempre a porcentagem"
+      ],
+      "correct": 1,
+      "exp": "O eixo vertical mostra os valores de uma variável medida; o significado exato depende do gráfico."
+    },
+    {
+      "id": 31,
+      "q": "Qual unidade é mais adequada para o volume de uma caixa pequena?",
+      "options": [
+        "cm",
+        "cm²",
+        "cm³",
+        "kg"
+      ],
+      "correct": 2,
+      "exp": "Volume é uma medida tridimensional, portanto usa unidade cúbica, como cm³."
+    },
+    {
+      "id": 32,
+      "q": "Uma corrida começa às 14h20 e termina às 15h05. Duração:",
+      "options": [
+        "35 min",
+        "40 min",
+        "45 min",
+        "55 min"
+      ],
+      "correct": 2,
+      "exp": "De 14h20 a 15h00 são 40 min; mais 5 min =45 min."
+    },
+    {
+      "id": 33,
+      "q": "Se 4 pessoas dividem igualmente R$ 100, cada uma recebe:",
+      "options": [
+        "R$ 20",
+        "R$ 25",
+        "R$ 30",
+        "R$ 40"
+      ],
+      "correct": 1,
+      "exp": "100/4=25."
+    },
+    {
+      "id": 34,
+      "q": "O número 0,75 pode ser escrito como:",
+      "options": [
+        "3/4",
+        "1/4",
+        "7/5",
+        "75/10"
+      ],
+      "correct": 0,
+      "exp": "0,75=75/100. Simplificando por 25: 3/4."
+    },
+    {
+      "id": 35,
+      "q": "Qual é a ordem correta para resolver 2+3·4?",
+      "options": [
+        "20",
+        "14",
+        "24",
+        "9"
+      ],
+      "correct": 1,
+      "exp": "Multiplicação antes da soma: 3·4=12; 2+12=14."
+    },
+    {
+      "id": 36,
+      "q": "Se uma quantidade cai de 200 para 150, a redução percentual é:",
+      "options": [
+        "20%",
+        "25%",
+        "30%",
+        "50%"
+      ],
+      "correct": 1,
+      "exp": "Redução=50. 50/200=0,25=25%."
+    },
+    {
+      "id": 37,
+      "q": "Um piso retangular de 4 m por 2,5 m tem área de:",
+      "options": [
+        "6,5 m²",
+        "8 m²",
+        "10 m²",
+        "12 m²"
+      ],
+      "correct": 2,
+      "exp": "4·2,5=10 m²."
+    },
+    {
+      "id": 38,
+      "q": "Se y=3x+1 e x=2, então y=",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 2,
+      "exp": "y=3·2+1=7."
+    },
+    {
+      "id": 39,
+      "q": "Qual é o MMC de 4 e 6?",
+      "options": [
+        "2",
+        "6",
+        "12",
+        "24"
+      ],
+      "correct": 2,
+      "exp": "Múltiplos comuns: 12,24,... O menor é 12."
+    },
+    {
+      "id": 40,
+      "q": "Qual é o MDC de 18 e 24?",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "correct": 1,
+      "exp": "Divisores comuns incluem 1,2,3,6; o maior é 6."
+    },
+    {
+      "q": "Qual é o resultado de 5 + 3 × (7 − 4)²?",
+      "options": [
+        "32",
+        "50",
+        "60",
+        "24"
+      ],
+      "correct": 0,
+      "exp": "Resolva primeiro o parênteses: 7 − 4 = 3. Depois a potência: 3² = 9. Em seguida a multiplicação: 3 × 9 = 27. Por fim, a soma: 5 + 27 = 32."
+    },
+    {
+      "q": "Qual é o resultado de 3/4 + 0,5?",
+      "options": [
+        "3/2",
+        "5/4",
+        "1",
+        "7/4"
+      ],
+      "correct": 1,
+      "exp": "0,5 equivale a 2/4. Somando 3/4 + 2/4 = 5/4, que é igual a 1,25."
+    },
+    {
+      "q": "Se 8 operários constroem um muro em 15 dias, quantos dias 12 operários levariam para construir o mesmo muro, no mesmo ritmo?",
+      "options": [
+        "12",
+        "20",
+        "10",
+        "8"
+      ],
+      "correct": 2,
+      "exp": "É uma grandeza inversamente proporcional: 8 × 15 = 120 operário-dia. Com 12 operários, 120 ÷ 12 = 10 dias."
+    },
+    {
+      "q": "Um produto custava R$ 250 e teve um desconto de 12%. Qual é o novo preço?",
+      "options": [
+        "R$ 238",
+        "R$ 225",
+        "R$ 210",
+        "R$ 220"
+      ],
+      "correct": 3,
+      "exp": "12% de 250 = 30. Subtraindo do preço original: 250 − 30 = R$ 220."
+    },
+    {
+      "q": "Qual é o valor de √144 + 2³?",
+      "options": [
+        "20",
+        "16",
+        "22",
+        "18"
+      ],
+      "correct": 0,
+      "exp": "√144 = 12, pois 12² = 144. Além disso, 2³ = 8. Somando: 12 + 8 = 20."
+    },
+    {
+      "q": "Qual é o valor da expressão 2x² − 3x + 1 para x = 3?",
+      "options": [
+        "16",
+        "10",
+        "8",
+        "13"
+      ],
+      "correct": 1,
+      "exp": "Substituindo x = 3: 2(3)² − 3(3) + 1 = 2(9) − 9 + 1 = 18 − 9 + 1 = 10."
+    },
+    {
+      "q": "Qual é a solução da equação 5x − 7 = 3x + 9?",
+      "options": [
+        "x = 6",
+        "x = 16",
+        "x = 8",
+        "x = 2"
+      ],
+      "correct": 2,
+      "exp": "Isolando x: 5x − 3x = 9 + 7 → 2x = 16 → x = 8."
+    },
+    {
+      "q": "As notas de um aluno em 4 provas foram 6, 7, 8 e 9. Qual é a média aritmética?",
+      "options": [
+        "7",
+        "8",
+        "7,25",
+        "7,5"
+      ],
+      "correct": 3,
+      "exp": "Some as notas: 6 + 7 + 8 + 9 = 30. Divida pelo número de provas: 30 ÷ 4 = 7,5."
+    },
+    {
+      "q": "Um terreno retangular mede 20 m de comprimento por 15 m de largura. Qual é a sua área?",
+      "options": [
+        "300 m²",
+        "35 m²",
+        "150 m²",
+        "600 m²"
+      ],
+      "correct": 0,
+      "exp": "Área do retângulo = comprimento × largura = 20 × 15 = 300 m²."
+    },
+    {
+      "q": "Uma torneira enche um tanque em 6 horas e outra, sozinha, enche o mesmo tanque em 3 horas. Funcionando juntas, em quanto tempo elas enchem o tanque?",
+      "options": [
+        "4,5 horas",
+        "2 horas",
+        "3 horas",
+        "1,5 horas"
+      ],
+      "correct": 1,
+      "exp": "Juntas, a vazão é 1/6 + 1/3 = 1/2 do tanque por hora. O tempo é o inverso da vazão: 2 horas."
+    }
+  ],
+  "subjects": [
+    {
+      "id": "1.1",
+      "year": "1",
+      "num": "1",
+      "title": "Conjuntos e Intervalos Reais",
+      "summary": "Aprenda a representar, comparar e operar conjuntos de números reais, além de interpretar intervalos na reta numérica.",
+      "detail": "Intervalos descrevem faixas de números. [a,b] inclui as duas extremidades; ]a,b[ exclui as duas; [a,b[ inclui a e exclui b. Em inequações, o colchete acompanha um extremo que pode ser atingido. Exemplo: x ≥ 2 corresponde a [2,+∞[.",
+      "questions": [
+        {
+          "q": "Dados A = {1, 2, 3, 4} e B = {3, 4, 5, 6}, qual é o conjunto A ∩ B?",
+          "options": [
+            "{1, 2}",
+            "{3, 4}",
+            "{5, 6}",
+            "{1, 2, 3, 4, 5, 6}"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Conjuntos e intervalos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Sendo A = [2, 8] e B = ]5, 10], qual é o intervalo A ∩ B?",
+          "options": [
+            "[2, 10]",
+            "]5, 8]",
+            "[2, 5]",
+            "]8, 10]"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Conjuntos e intervalos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O número real -0.75 pertence a qual conjunto numérico fundamental mais restrito?",
+          "options": [
+            "Naturais (N)",
+            "Inteiros (Z)",
+            "Racionais (Q)",
+            "Irracionais (I)"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Conjuntos e intervalos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Se A = {0, 1, 2, 3, 4} e B = {1, 3}, qual o conjunto diferença A - B?",
+          "options": [
+            "{0, 2, 4}",
+            "{1, 3}",
+            "{0, 1, 2, 3, 4}",
+            "{ }"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Conjuntos e intervalos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Quantos elementos possui o subconjunto dos números inteiros contidos no intervalo ]-3, 3[?",
+          "options": [
+            "7",
+            "6",
+            "5",
+            "4"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Conjuntos e intervalos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O conjunto união A U B de A = {x ∈ Z | -1 ≤ x < 2} e B = {2, 3} é:",
+          "options": [
+            "{-1, 0, 1, 2, 3}",
+            "{0, 1, 2, 3}",
+            "{-1, 0, 1}",
+            "{1, 2, 3}"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Conjuntos e intervalos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual dos seguintes números é um número irracional?",
+          "options": [
+            "√4",
+            "0,333...",
+            "√2",
+            "5/2"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Conjuntos e intervalos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Se n(A) = 10, n(B) = 15 e n(A ∩ B) = 5, qual é o valor de n(A U B)?",
+          "options": [
+            "25",
+            "20",
+            "15",
+            "30"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Conjuntos e intervalos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A representação em notação de conjunto do intervalo [4, +∞[ é:",
+          "options": [
+            "{x ∈ R",
+            "x > 4}",
+            "{x ∈ R",
+            "x ≥ 4}"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Conjuntos e intervalos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O complementar do conjunto dos números Racionais (Q) em relação aos Reais (R) é o conjunto:",
+          "options": [
+            "Dos inteiros (Z)",
+            "Dos naturais (N)",
+            "Dos irracionais (I)",
+            "Vazio (∅)"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Conjuntos e intervalos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Dados A = {2, 4, 6, 8, 10} e B = {4, 8, 12, 16}, qual é o conjunto A ∪ B?",
+          "options": [
+            "{2, 4, 6, 8, 10, 12, 16}",
+            "{4, 8}",
+            "{2, 4, 6, 8, 10}",
+            "{4, 8, 12, 16}"
+          ],
+          "correct": 0,
+          "exp": "A união reúne todos os elementos que aparecem em A ou em B, sem repetir: {2, 4, 6, 8, 10, 12, 16}."
+        },
+        {
+          "q": "Considerando U = {1, 2, 3, 4, 5, 6, 7, 8} e A = {1, 2, 3, 4, 5}, qual é o complementar de A em relação a U?",
+          "options": [
+            "{1, 2, 3, 4, 5}",
+            "{6, 7, 8}",
+            "{1, 2, 3, 4, 5, 6, 7, 8}",
+            "{ }"
+          ],
+          "correct": 1,
+          "exp": "O complementar reúne os elementos de U que não pertencem a A: {6, 7, 8}."
+        },
+        {
+          "q": "Qual alternativa representa corretamente o intervalo -3 ≤ x < 5 usando colchetes?",
+          "options": [
+            "]-3, 5]",
+            "[-3, 5]",
+            "[-3, 5[",
+            "]-3, 5["
+          ],
+          "correct": 2,
+          "exp": "O colchete voltado para dentro em -3 indica que ele está incluído; o colchete voltado para fora em 5 indica que ele está excluído: [-3, 5[."
+        },
+        {
+          "q": "Se A = ]-∞, 4] e B = [1, +∞[, qual é o conjunto A ∩ B?",
+          "options": [
+            "]-∞, +∞[",
+            "[1, +∞[",
+            "]-∞, 4]",
+            "[1, 4]"
+          ],
+          "correct": 3,
+          "exp": "A interseção fica na faixa comum aos dois intervalos, do maior limite inferior ao menor limite superior: [1, 4]."
+        },
+        {
+          "q": "Quantos números inteiros pertencem ao intervalo [-2, 3[?",
+          "options": [
+            "5",
+            "6",
+            "4",
+            "3"
+          ],
+          "correct": 0,
+          "exp": "Os inteiros no intervalo são -2, -1, 0, 1 e 2 (o 3 fica de fora, pois o intervalo é aberto nesse extremo). Total: 5 números."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "Conjuntos numéricos: N ⊂ Z ⊂ Q ⊂ R.",
+          "União reúne elementos de A ou B; interseção reúne elementos comuns; diferença retira de A os elementos que pertencem a B.",
+          "Intervalo fechado [a,b] inclui os extremos; aberto (a,b) não inclui; intervalos mistos incluem apenas um extremo.",
+          "Na reta real, esquerda representa números menores e direita representa números maiores."
+        ],
+        "steps": [
+          "Antes de calcular, identifique o conjunto universo e se os extremos pertencem ao intervalo.",
+          "Transforme desigualdades em uma representação visual na reta.",
+          "Para cardinalidade de inteiros, liste os inteiros possíveis em vez de contar números reais."
+        ],
+        "example": "Exemplo: ]−2,3] significa −2 < x ≤ 3."
+      }
+    },
+    {
+      "id": "1.2",
+      "year": "1",
+      "num": "2",
+      "title": "Função Afim",
+      "summary": "Uma função afim associa cada entrada x a um único valor y pela regra f(x)=ax+b. Ela aparece em custos fixos, tarifas, salários e variações lineares.",
+      "detail": "Para encontrar a raiz, fazemos f(x)=0: ax+b=0, então x=−b/a, desde que a≠0. Em problemas reais, uma taxa fixa costuma aparecer como b e uma cobrança por unidade como a. Exemplo: R$5 fixos + R$2 por km → P(x)=2x+5.",
+      "questions": [
+        {
+          "q": "Dada a função f(x) = 3x - 6, qual é a sua raiz (zero da função)?",
+          "options": [
+            "x = 1",
+            "x = 2",
+            "x = 3",
+            "x = -2"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Função afim. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Um motorista de aplicativo cobra R$ 5,00 de taxa fixa mais R$ 2,00 por km rodado.",
+          "options": [
+            "Qual é a lei da função que representa o preço P(x) em relação aos quilômetros x?",
+            "P(x) = 5x + 2",
+            "P(x) = 2x + 5",
+            "P(x) = 7x"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Função afim. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Na função f(x) = -4x + 12, o gráfico corta o eixo das ordenadas (Y) no ponto:",
+          "options": [
+            "(0, 12)",
+            "(12, 0)",
+            "(0, -4)",
+            "(3, 0)"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Função afim. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Se f(x) = 2x + 8, qual o valor de f(5)?",
+          "options": [
+            "10",
+            "16",
+            "18",
+            "20"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Função afim. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A função f(x) = -2x + 5 é uma função:",
+          "options": [
+            "Crescente",
+            "Decrescente",
+            "Constante",
+            "Quadrática"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Função afim. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual a taxa de variação (coeficiente angular) da função f(x) = (1/2)x - 9?",
+          "options": [
+            "-9",
+            "9",
+            "1/2",
+            "2"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Função afim. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual o valor de x para o qual f(x) = 15 na função f(x) = 3x + 3?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Função afim. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Um plano de telefonia custa R$ 30,00 mensais com direito a 100 min. Minutos excedentes custam R$ 0,50 cada.",
+          "options": [
+            "Qual o valor pago por um cliente que usou 120 minutos?",
+            "R$ 35,00",
+            "R$ 40,00",
+            "R$ 50,00"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Função afim. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A raiz da função afim representada pelo ponto (4, 0) no gráfico é:",
+          "options": [
+            "y = 4",
+            "x = 4",
+            "x = 0",
+            "y = -4"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Função afim. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Se f(1) = 4 e f(2) = 7, qual é o valor do coeficiente angular 'a' da função f(x) = ax + b?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Função afim. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Uma função afim é definida por f(x) = 3x − 5. Qual é o valor de f(4)?",
+          "options": [
+            "12",
+            "7",
+            "17",
+            "-7"
+          ],
+          "correct": 1,
+          "exp": "Substituindo x = 4: f(4) = 3(4) − 5 = 12 − 5 = 7."
+        },
+        {
+          "q": "A reta que representa a função f(x) = -2x + 6 corta o eixo x em qual ponto?",
+          "options": [
+            "(0, 3)",
+            "(6, 0)",
+            "(3, 0)",
+            "(0, 6)"
+          ],
+          "correct": 2,
+          "exp": "No eixo x, y = 0: -2x + 6 = 0 → x = 3. O ponto é (3, 0)."
+        },
+        {
+          "q": "Determine a lei de formação da função afim que passa pelos pontos (0, 4) e (2, 10).",
+          "options": [
+            "f(x) = 4x + 3",
+            "f(x) = 3x − 4",
+            "f(x) = 2x + 4",
+            "f(x) = 3x + 4"
+          ],
+          "correct": 3,
+          "exp": "O coeficiente angular é (10 − 4)/(2 − 0) = 3. Como o ponto (0, 4) dá o coeficiente linear b = 4, a lei é f(x) = 3x + 4."
+        },
+        {
+          "q": "A função f(x) = kx − 7 tem f(2) = 3. Qual é o valor de k?",
+          "options": [
+            "5",
+            "-5",
+            "2",
+            "7"
+          ],
+          "correct": 0,
+          "exp": "Substituindo: 2k − 7 = 3 → 2k = 10 → k = 5."
+        },
+        {
+          "q": "Para a função f(x) = -4x + 12, em qual intervalo de x a função é positiva?",
+          "options": [
+            "x > 3",
+            "x < 3",
+            "x < -3",
+            "x > -3"
+          ],
+          "correct": 1,
+          "exp": "Resolvendo -4x + 12 > 0: -4x > -12. Dividindo por -4 (inverte o sinal): x < 3."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "a é a taxa de variação (inclinação); b é o valor inicial quando x=0.",
+          "Se a>0, a função cresce; se a<0, decresce; se a=0, é constante.",
+          "A raiz é o valor de x para o qual f(x)=0: x=−b/a, quando a≠0.",
+          "Dois pontos determinam uma reta: a=(y₂−y₁)/(x₂−x₁)."
+        ],
+        "steps": [
+          "Separe valor fixo de valor variável.",
+          "Monte a função antes de substituir números.",
+          "Cheque a unidade: se x está em horas e f(x) em reais, a taxa está em reais por hora."
+        ],
+        "example": "Exemplo: uma taxa de R$20 mais R$3 por km pode ser modelada por C(x)=3x+20."
+      }
+    },
+    {
+      "id": "1.3",
+      "year": "1",
+      "num": "3",
+      "title": "Função Quadrática",
+      "summary": "Funções quadráticas têm a forma f(x)=ax²+bx+c e são representadas por parábolas. Elas modelam máximos, mínimos e trajetórias.",
+      "detail": "O discriminante Δ=b²−4ac indica quantas raízes reais existem: Δ>0 dá duas raízes reais distintas; Δ=0 dá uma raiz real dupla; Δ<0 não há raízes reais. As raízes são x=(−b±√Δ)/(2a). O vértice pode ser calculado por xv=−b/(2a) e yv=f(xv).",
+      "questions": [
+        {
+          "q": "Qual o valor da coordenada X do vértice da parábola dada por f(x) = x² - 6x + 5?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "6"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Função quadrática. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "As raízes da função quadrática f(x) = x² - 5x + 6 são:",
+          "options": [
+            "1 e 6",
+            "2 e 3",
+            "-2 e -3",
+            "0 e 5"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Função quadrática. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Se o coeficiente 'a' de uma função quadrática for negativo (a < 0), a parábola terá:",
+          "options": [
+            "Concavidade voltada para cima",
+            "Concavidade voltada para baixo",
+            "Formato de reta",
+            "Sem concavidade definida"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Função quadrática. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A altura h de um projétil em metros é dada por h(t) = -t² + 4t. Qual a altura máxima atingida?",
+          "options": [
+            "2 m",
+            "4 m",
+            "8 m",
+            "16 m"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Função quadrática. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O discriminante Δ (delta) da função f(x) = 2x² - 4x + 2 é igual a:",
+          "options": [
+            "0",
+            "4",
+            "8",
+            "16"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Função quadrática. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Quando o delta de uma função do 2º grau é negativo (Δ < 0), o gráfico da parábola:",
+          "options": [
+            "Corta o eixo X em dois pontos",
+            "Toca o eixo X em apenas um ponto",
+            "Não intercepta o eixo X",
+            "É uma reta paralela ao eixo Y"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Função quadrática. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Em f(x) = x² - 9, em quais pontos a parábola intercepta o eixo das abscissas (X)?",
+          "options": [
+            "(-3,0) e (3,0)",
+            "(0,-9)",
+            "(0,3) e (0,-3)",
+            "(9,0)"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Função quadrática. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O ponto em que o gráfico de f(x) = ax² + bx + c intercepta o eixo Y é dado por:",
+          "options": [
+            "(0, a)",
+            "(0, b)",
+            "(0, c)",
+            "(Xv, Yv)"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Função quadrática. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A soma das raízes da equação x² - 8x + 12 = 0 é igual a:",
+          "options": [
+            "6",
+            "8",
+            "12",
+            "-8"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Função quadrática. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O produto das raízes da função f(x) = x² - 7x + 10 é igual a:",
+          "options": [
+            "7",
+            "10",
+            "-7",
+            "-10"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Função quadrática. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual é o valor do discriminante (Δ) da equação x² − 5x + 6 = 0?",
+          "options": [
+            "25",
+            "-1",
+            "1",
+            "49"
+          ],
+          "correct": 2,
+          "exp": "Δ = b² − 4ac = (-5)² − 4(1)(6) = 25 − 24 = 1."
+        },
+        {
+          "q": "Quais são as raízes da equação x² − 7x + 12 = 0?",
+          "options": [
+            "x = 2 e x = 6",
+            "x = 1 e x = 12",
+            "x = -3 e x = -4",
+            "x = 3 e x = 4"
+          ],
+          "correct": 3,
+          "exp": "Procurando dois números que somam 7 e multiplicam 12: 3 e 4. As raízes são x = 3 e x = 4."
+        },
+        {
+          "q": "Qual é o vértice da parábola y = x² − 4x + 3?",
+          "options": [
+            "(2, -1)",
+            "(2, 1)",
+            "(-2, -1)",
+            "(4, 3)"
+          ],
+          "correct": 0,
+          "exp": "xv = -b/2a = 4/2 = 2. Substituindo: yv = 4 − 8 + 3 = -1. O vértice é (2, -1)."
+        },
+        {
+          "q": "A função f(x) = -x² + 6x − 5 tem concavidade para baixo. Em que valor de x ocorre o máximo?",
+          "options": [
+            "x = -3",
+            "x = 3",
+            "x = 6",
+            "x = 5"
+          ],
+          "correct": 1,
+          "exp": "xv = -b/2a = -6/(2 × -1) = 3. O valor máximo ocorre em x = 3."
+        },
+        {
+          "q": "Quantas raízes reais tem a equação 2x² − 4x + 5 = 0?",
+          "options": [
+            "Uma raiz real (dupla)",
+            "Duas raízes reais distintas",
+            "Nenhuma raiz real",
+            "Duas raízes reais iguais"
+          ],
+          "correct": 2,
+          "exp": "Δ = (-4)² − 4(2)(5) = 16 − 40 = -24. Como Δ < 0, não há raízes reais."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "O sinal de a define a concavidade: a>0 abre para cima; a<0 abre para baixo.",
+          "O discriminante Δ=b²−4ac informa a quantidade de raízes reais.",
+          "As raízes, quando existem, são x=(−b±√Δ)/(2a).",
+          "O vértice tem xᵥ=−b/(2a) e yᵥ=f(xᵥ)."
+        ],
+        "steps": [
+          "Identifique a,b,c.",
+          "Calcule Δ antes de tentar as raízes.",
+          "Em problemas de máximo ou mínimo, procure o vértice."
+        ],
+        "example": "Exemplo: a altura de um objeto pode ser modelada por h(t)=−5t²+20t+1; como a<0, existe um máximo."
+      }
+    },
+    {
+      "id": "1.4",
+      "year": "1",
+      "num": "4",
+      "title": "Função Exponencial",
+      "summary": "Na função exponencial f(x)=a^x, com a>0 e a≠1, a variável aparece no expoente. É adequada para crescimento e decaimento multiplicativos.",
+      "detail": "As propriedades das potências ajudam a resolver equações. Se as bases podem ser igualadas, por exemplo 2ˣ=32=2⁵, então x=5. Em crescimento por multiplicação repetida, use N(t)=N₀·aᵗ.",
+      "questions": [
+        {
+          "q": "Qual o valor de x na equação exponencial 2^x = 32?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "8"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Exponencial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Uma cultura de bactérias dobra a cada hora. Se inicialmente há 100 bactérias,",
+          "options": [
+            "quantas haverá após 4 horas? (Fórmula: N(t) = 100 · 2^t)",
+            "400",
+            "800",
+            "1600"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Exponencial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A função f(x) = (1/3)^x é classified como:",
+          "options": [
+            "Crescente",
+            "Decrescente",
+            "Linear",
+            "Polinomial"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Exponencial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Resolva a equação exponencial 3^(x+1) = 81. Qual o valor de x?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Exponencial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O gráfico de qualquer função exponencial da forma f(x) = a^x sempre corta o eixo Y no ponto:",
+          "options": [
+            "(0, 0)",
+            "(0, 1)",
+            "(1, 0)",
+            "(1, 1)"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Exponencial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual a solução para 5^(2x) = 25?",
+          "options": [
+            "x = 0.5",
+            "x = 1",
+            "x = 2",
+            "x = 2.5"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Exponencial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Sabendo que 2^a = 8 e 2^b = 16, qual o valor de 2^(a+b)?",
+          "options": [
+            "24",
+            "64",
+            "128",
+            "256"
+          ],
+          "correct": 3,
+          "exp": "Gabarito: D. Resolva destacando primeiro o conceito de Exponencial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O valor de (0,5)^(-2) é igual a:",
+          "options": [
+            "0,25",
+            "1",
+            "2",
+            "4"
+          ],
+          "correct": 3,
+          "exp": "Gabarito: D. Resolva destacando primeiro o conceito de Exponencial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Em f(x) = 4^x, qual é o valor de f(3/2)?",
+          "options": [
+            "6",
+            "8",
+            "12",
+            "16"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Exponencial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A solução da inequação 2^x > 16 é o conjunto:",
+          "options": [
+            "x > 2",
+            "x > 3",
+            "x > 4",
+            "x > 5"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Exponencial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual é o valor de f(x) = 2^x para x = 5?",
+          "options": [
+            "25",
+            "10",
+            "16",
+            "32"
+          ],
+          "correct": 3,
+          "exp": "2^5 = 2×2×2×2×2 = 32."
+        },
+        {
+          "q": "Resolva a equação 3^x = 81.",
+          "options": [
+            "x = 4",
+            "x = 3",
+            "x = 27",
+            "x = 9"
+          ],
+          "correct": 0,
+          "exp": "Como 3^4 = 81, o valor de x que satisfaz a equação é 4."
+        },
+        {
+          "q": "Uma população de bactérias dobra a cada hora, partindo de 200 indivíduos. Quantas bactérias haverá após 4 horas?",
+          "options": [
+            "800",
+            "3200",
+            "1600",
+            "6400"
+          ],
+          "correct": 1,
+          "exp": "A população é dada por 200 × 2^4 = 200 × 16 = 3200 bactérias."
+        },
+        {
+          "q": "Qual é o valor de x na equação 2^(x+1) = 32?",
+          "options": [
+            "x = 5",
+            "x = 3",
+            "x = 4",
+            "x = 16"
+          ],
+          "correct": 2,
+          "exp": "Como 32 = 2^5, temos x + 1 = 5, logo x = 4."
+        },
+        {
+          "q": "A função f(x) = 5 · (0,5)^x representa um decaimento exponencial. Qual é o valor de f(0)?",
+          "options": [
+            "0",
+            "1",
+            "10",
+            "5"
+          ],
+          "correct": 3,
+          "exp": "Qualquer número elevado a 0 é igual a 1, então f(0) = 5 × 1 = 5."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "Se a>1, a função é crescente; se 0<a<1, é decrescente.",
+          "Propriedades: a^m·a^n=a^(m+n) e a^m/a^n=a^(m−n).",
+          "Crescimento percentual repetido é multiplicativo, não aditivo.",
+          "Equações com a mesma base podem ser resolvidas igualando expoentes."
+        ],
+        "steps": [
+          "Transforme percentuais em fatores: aumentar 8% multiplica por 1,08; reduzir 8% multiplica por 0,92.",
+          "Observe se a taxa ocorre por período.",
+          "Use logaritmos quando as incógnitas estiverem no expoente e não houver uma base comum."
+        ],
+        "example": "Exemplo: R(t)=1000·1,05^t representa 5% de crescimento por período."
+      }
+    },
+    {
+      "id": "1.5",
+      "year": "1",
+      "num": "5",
+      "title": "Função Logarítmica",
+      "summary": "O logaritmo responde à pergunta: qual expoente produz determinado número? log_a b=c significa a^c=b.",
+      "detail": "As propriedades transformam produtos em somas: log(xy)=log x+log y; quocientes em diferenças; potências em multiplicações pelo expoente. O logaritmo é a função inversa da exponencial. Antes de resolver uma expressão, verifique o domínio: o argumento precisa ser positivo.",
+      "questions": [
+        {
+          "q": "Qual é o valor do logaritmo log_2(16)?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "8"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Logaritmos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Sabendo que log(2) = 0,30 e log(3) = 0,48, qual é o valor de log(6)?",
+          "options": [
+            "0,18",
+            "0,78",
+            "0,90",
+            "1,44"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Logaritmos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O valor de log_5(1) é igual a:",
+          "options": [
+            "0",
+            "1",
+            "5",
+            "Indefinido"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Logaritmos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual o valor de x na equação log_3(x) = 4?",
+          "options": [
+            "12",
+            "64",
+            "81",
+            "243"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Logaritmos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A base do logaritmo natural (ou neperiano) é o número irracional:",
+          "options": [
+            "Pi (π)",
+            "Euler (e)",
+            "Ouro (φ)",
+            "Raiz de 2 (√2)"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Logaritmos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Aplicando as propriedades, a expressão log(A) - log(B) é equivalente a:",
+          "options": [
+            "log(A - B)",
+            "log(A / B)",
+            "log(A · B)",
+            "log(A) / log(B)"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Logaritmos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual é a condição de existência do logaritmo log_b(a)?",
+          "options": [
+            "a > 0, b > 0 e b ≠ 1",
+            "a ≥ 0 e b > 0",
+            "a > 0 e b > 0",
+            "Qualquer número real"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Logaritmos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A função f(x) = log_2(x) é a função inversa de qual função?",
+          "options": [
+            "g(x) = 2x",
+            "g(x) = x²",
+            "g(x) = 2^x",
+            "g(x) = x/2"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Logaritmos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O pH de uma solução é calculado por pH = -log[H+]. Se [H+] = 10^-5, qual o pH?",
+          "options": [
+            "3",
+            "5",
+            "7",
+            "10"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Logaritmos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O valor de log_10(1000) é igual a:",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Logaritmos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual é o valor de log₂ 32?",
+          "options": [
+            "5",
+            "4",
+            "6",
+            "16"
+          ],
+          "correct": 0,
+          "exp": "Como 2^5 = 32, log₂ 32 = 5."
+        },
+        {
+          "q": "Resolva log(x) = 3, considerando log na base 10.",
+          "options": [
+            "x = 3",
+            "x = 1000",
+            "x = 100",
+            "x = 30"
+          ],
+          "correct": 1,
+          "exp": "log(x) = 3 significa 10³ = x, logo x = 1000."
+        },
+        {
+          "q": "Qual é o valor de log₃ 1?",
+          "options": [
+            "1",
+            "3",
+            "0",
+            "-1"
+          ],
+          "correct": 2,
+          "exp": "Todo logaritmo de 1, em qualquer base, é igual a 0, pois a⁰ = 1."
+        },
+        {
+          "q": "Simplifique: log₂ 8 + log₂ 4.",
+          "options": [
+            "32",
+            "7",
+            "12",
+            "5"
+          ],
+          "correct": 3,
+          "exp": "log₂ 8 = 3 e log₂ 4 = 2. Somando: 3 + 2 = 5."
+        },
+        {
+          "q": "Se log₅ x = 2, qual é o valor de x?",
+          "options": [
+            "25",
+            "10",
+            "7",
+            "32"
+          ],
+          "correct": 0,
+          "exp": "log₅ x = 2 significa 5² = x, logo x = 25."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "Domínio: b>0; base a>0 e a≠1.",
+          "log_a(xy)=log_a x+log_a y e log_a(x/y)=log_a x−log_a y.",
+          "A função é crescente quando a>1 e decrescente quando 0<a<1.",
+          "Logaritmos são úteis para descobrir tempo, escala e expoentes desconhecidos."
+        ],
+        "steps": [
+          "Converta a expressão para a forma exponencial.",
+          "Verifique as condições de existência antes de calcular.",
+          "Use mudança de base quando necessário: log_a b=ln(b)/ln(a)."
+        ],
+        "example": "Exemplo: log_2 32=5 porque 2^5=32."
+      }
+    },
+    {
+      "id": "2.1",
+      "year": "2",
+      "num": "1",
+      "title": "Trigonometria no Triângulo Retângulo",
+      "summary": "Seno, cosseno e tangente relacionam ângulos e lados de um triângulo retângulo.",
+      "detail": "No ciclo trigonométrico, ângulos são medidos em graus ou radianos e π rad=180°. Os sinais de seno e cosseno mudam conforme o quadrante. Para ângulos notáveis, memorize 30°, 45° e 60° e seus valores fundamentais.",
+      "questions": [
+        {
+          "q": "Em um triângulo retângulo, a hipotenusa mede 10 cm e um ângulo agudo é de 30°. (sen 30° = 0.5). Qual o cateto oposto?",
+          "options": [
+            "3 cm",
+            "5 cm",
+            "8 cm",
+            "8.6 cm"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Trigonometria. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual é o valor equivalente em radianos para o ângulo de 180°?",
+          "options": [
+            "π/2 rad",
+            "π rad",
+            "2π rad",
+            "3π/2 rad"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Trigonometria. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O valor do cosseno de 60° é igual a:",
+          "options": [
+            "1/2",
+            "√2/2",
+            "√3/2",
+            "1"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Trigonometria. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual o valor da tangente de 45°?",
+          "options": [
+            "0",
+            "1/2",
+            "1",
+            "√3"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Trigonometria. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Sabendo que sen(x) = 0.6 e x está no 1º quadrante, qual o valor de cos(x)?",
+          "options": [
+            "0.4",
+            "0.7",
+            "0.8",
+            "1.0"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Trigonometria. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O período da função trigonométrica f(x) = sen(x) no ciclo trigonométrico é:",
+          "options": [
+            "π/2",
+            "π",
+            "2π",
+            "4π"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Trigonometria. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Converter 90° para radianos resulta em:",
+          "options": [
+            "π/4 rad",
+            "π/3 rad",
+            "π/2 rad",
+            "2π/3 rad"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Trigonometria. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Em qual quadrante do ciclo trigonométrico o Seno é positivo e o Cosseno é negativo?",
+          "options": [
+            "1º Quadrante",
+            "2º Quadrante",
+            "3º Quadrante",
+            "4º Quadrante"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Trigonometria. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O valor exato de sen(90°) + cos(0°) é:",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "√2"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Trigonometria. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A lei dos Senos é dada por a/sen(A) = b/sen(B) = c/sen(C). Ela pode ser aplicada em:",
+          "options": [
+            "Apenas triângulos retângulos",
+            "Qualquer tipo de triângulo",
+            "Apenas triângulos equiláteros",
+            "Apenas polígonos regulares de 4 lados"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Trigonometria. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Em um triângulo retângulo, o cateto oposto a um ângulo mede 6 e a hipotenusa mede 10. Qual é o seno desse ângulo?",
+          "options": [
+            "0,8",
+            "0,6",
+            "1,2",
+            "0,4"
+          ],
+          "correct": 1,
+          "exp": "sen(θ) = cateto oposto / hipotenusa = 6/10 = 0,6."
+        },
+        {
+          "q": "Se cos(θ) = 0,8 em um triângulo retângulo, qual é o valor de sen(θ)? (use sen² + cos² = 1)",
+          "options": [
+            "0,8",
+            "0,4",
+            "0,6",
+            "1,0"
+          ],
+          "correct": 2,
+          "exp": "sen²(θ) = 1 − 0,8² = 1 − 0,64 = 0,36. Logo sen(θ) = √0,36 = 0,6."
+        },
+        {
+          "q": "Um triângulo retângulo tem catetos de 9 e 12. Qual é a medida da hipotenusa?",
+          "options": [
+            "21",
+            "13",
+            "16",
+            "15"
+          ],
+          "correct": 3,
+          "exp": "Pelo teorema de Pitágoras: h² = 9² + 12² = 81 + 144 = 225. Logo h = √225 = 15."
+        },
+        {
+          "q": "Em um triângulo retângulo, um ângulo mede 30°. Qual é o valor de sen(30°)?",
+          "options": [
+            "0,5",
+            "0,87",
+            "1",
+            "0,71"
+          ],
+          "correct": 0,
+          "exp": "sen(30°) é um valor notável da trigonometria e é igual a 0,5 (ou 1/2)."
+        },
+        {
+          "q": "Qual é o valor da tangente de 45°?",
+          "options": [
+            "0",
+            "1",
+            "√2",
+            "0,5"
+          ],
+          "correct": 1,
+          "exp": "Em 45°, o cateto oposto e o cateto adjacente têm a mesma medida, então tan(45°) = 1."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "sen θ = cateto oposto/hipotenusa.",
+          "cos θ = cateto adjacente/hipotenusa.",
+          "tg θ = cateto oposto/cateto adjacente.",
+          "Teorema de Pitágoras: a²=b²+c², com a como hipotenusa."
+        ],
+        "steps": [
+          "Marque o ângulo de referência e identifique os lados em relação a ele.",
+          "Escolha a razão trigonométrica que usa o lado conhecido e o procurado.",
+          "Confira se o resultado respeita o tamanho da hipotenusa."
+        ],
+        "example": "Exemplo: se o cateto oposto mede 3 e a hipotenusa 5, sen θ=3/5."
+      }
+    },
+    {
+      "id": "2.2",
+      "year": "2",
+      "num": "2",
+      "title": "Matrizes e Determinantes",
+      "summary": "Matrizes organizam números em linhas e colunas. Determinantes ajudam a analisar matrizes quadradas e sistemas lineares.",
+      "detail": "Para uma matriz 2×2 [[a,b],[c,d]], det(A)=ad−bc. Se o determinante é zero, a matriz não possui inversa. A matriz identidade tem 1 na diagonal principal e 0 nos demais elementos.",
+      "questions": [
+        {
+          "q": "Qual o determinante da matriz 2x2 M = [[3, 2], [1, 4]]?",
+          "options": [
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Matrizes. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Uma matriz do tipo 3x2 possui quantas linhas e quantas colunas?",
+          "options": [
+            "2 linhas e 3 colunas",
+            "3 linhas e 2 colunas",
+            "3 linhas e 3 colunas",
+            "6 linhas e 1 coluna"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Matrizes. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A matriz transposta da matriz A = [[1, 2], [3, 4]] é:",
+          "options": [
+            "[[4, 3], [2, 1]]",
+            "[[1, 3], [2, 4]]",
+            "[[2, 1], [4, 3]]",
+            "[[1, 2], [3, 4]]"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Matrizes. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Se A e B são matrizes de ordem 2x2, a soma A + B é feita:",
+          "options": [
+            "Somando elemento por elemento correspondente",
+            "Multiplicando as linhas pelas colunas",
+            "Calculando apenas os determinantes",
+            "Somando somente a diagonal principal"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Matrizes. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual é o valor do determinante de uma matriz de ordem 2x2 que possui duas linhas iguais?",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "Depende dos elementos"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Matrizes. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Para ser possível multiplicar uma matriz A de ordem (m x n) por uma matriz B de ordem (p x q), é necessário que:",
+          "options": [
+            "m = q",
+            "n = p",
+            "m = p",
+            "n = q"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Matrizes. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A regra prática utilizada para calcular o determinante de matrizes de ordem 3x3 é a Regra de:",
+          "options": [
+            "Cramer",
+            "Sarrus",
+            "Bhaskara",
+            "Laplace"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Matrizes. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Dadas A = [[1, 0], [0, 1]] e B = [[5, 2], [3, 4]], o produto A · B resulta em:",
+          "options": [
+            "Matriz Identidade",
+            "Matriz Nula",
+            "A própria matriz B",
+            "Matriz A"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Matrizes. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O elemento a_21 de uma matriz A representa o termo localizado na:",
+          "options": [
+            "Linha 1, Coluna 2",
+            "Linha 2, Coluna 1",
+            "Diagonal principal",
+            "Coluna 2, Linha 2"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Matrizes. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Uma matriz quadrada em que todos os elementos fora da diagonal principal são nulos é chamada de:",
+          "options": [
+            "Matriz Linha",
+            "Matriz Diagonal",
+            "Matriz Nula",
+            "Matriz Simétrica"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Matrizes. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual é o determinante da matriz [[4, 2], [3, 1]]?",
+          "options": [
+            "2",
+            "10",
+            "-2",
+            "-10"
+          ],
+          "correct": 2,
+          "exp": "Determinante de matriz 2×2: (4×1) − (2×3) = 4 − 6 = -2."
+        },
+        {
+          "q": "Some as matrizes A = [[1, 2], [3, 4]] e B = [[5, 6], [7, 8]]. Qual é o elemento da posição (2,2) da soma?",
+          "options": [
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          "correct": 3,
+          "exp": "Somando elemento a elemento na posição (2,2): 4 + 8 = 12."
+        },
+        {
+          "q": "Qual é a matriz identidade de ordem 2?",
+          "options": [
+            "[[1,0],[0,1]]",
+            "[[0,1],[1,0]]",
+            "[[1,1],[1,1]]",
+            "[[0,0],[0,0]]"
+          ],
+          "correct": 0,
+          "exp": "A matriz identidade tem 1 na diagonal principal e 0 nas demais posições: [[1,0],[0,1]]."
+        },
+        {
+          "q": "Multiplique a matriz [[2,0],[0,2]] pelo escalar 3. Qual é o resultado?",
+          "options": [
+            "[[5,0],[0,5]]",
+            "[[6,0],[0,6]]",
+            "[[6,3],[3,6]]",
+            "[[2,3],[3,2]]"
+          ],
+          "correct": 1,
+          "exp": "Multiplicar por um escalar significa multiplicar cada elemento da matriz por ele: 3×2=6 na diagonal, mantendo os zeros."
+        },
+        {
+          "q": "Uma matriz quadrada é chamada de singular quando seu determinante é:",
+          "options": [
+            "Positivo",
+            "Negativo",
+            "Igual a zero",
+            "Igual a 1"
+          ],
+          "correct": 2,
+          "exp": "Uma matriz é singular (não inversível) exatamente quando seu determinante é igual a zero."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "A ordem m×n informa linhas e colunas.",
+          "Soma e subtração exigem matrizes de mesma ordem.",
+          "No produto, o número de colunas da primeira deve ser igual ao número de linhas da segunda.",
+          "Para [[a,b],[c,d]], det=ad−bc."
+        ],
+        "steps": [
+          "Confirme dimensões antes de multiplicar.",
+          "Em determinantes 2×2, use a diagonal principal menos a diagonal secundária.",
+          "Um determinante zero indica que a matriz não é invertível."
+        ],
+        "example": "Exemplo: det([[2,3],[1,4]])=8−3=5."
+      }
+    },
+    {
+      "id": "2.3",
+      "year": "2",
+      "num": "3",
+      "title": "Sistemas Lineares",
+      "summary": "Um sistema reúne duas ou mais equações com incógnitas comuns. O objetivo é encontrar valores que satisfaçam todas simultaneamente.",
+      "detail": "SPD possui uma única solução; SPI possui infinitas soluções; SI não possui solução. Para resolver, você pode usar substituição, adição/eliminações ou escalonamento. O ponto principal é transformar o sistema sem alterar seu conjunto de soluções.",
+      "questions": [
+        {
+          "q": "No sistema {x + y = 12, x - y = 4}, qual é o valor do par ordenado (x, y)?",
+          "options": [
+            "(8, 4)",
+            "(7, 5)",
+            "(6, 6)",
+            "(10, 2)"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Sistemas lineares. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Um sistema linear que possui uma única solução é classificado como:",
+          "options": [
+            "SPD (Possível e Determinado)",
+            "SPI (Possível e Indeterminado)",
+            "SI (Sistema Impossível)",
+            "Incompatível"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Sistemas lineares. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Na Regra de Cramer, se o determinante principal (D) for diferente de zero (D ≠ 0), o sistema será:",
+          "options": [
+            "Impossível",
+            "SPD",
+            "SPI",
+            "Nulo"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Sistemas lineares. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Resolva: {2x + y = 10, x - y = 2}. Qual o valor de x?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Sistemas lineares. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Quando retas num plano cartesiano associadas a um sistema 2x2 são coincidentes, o sistema é:",
+          "options": [
+            "SPD",
+            "SPI",
+            "SI",
+            "Nulo"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Sistemas lineares. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O sistema {x + y = 5, x + y = 10} é classificado como:",
+          "options": [
+            "SPD",
+            "SPI",
+            "SI (Impossível)",
+            "Homogêneo"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Sistemas lineares. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Um sistema homogêneo (onde todos os termos independentes são nulos) sempre admite pelo menos a solução:",
+          "options": [
+            "Impossível",
+            "Trivial (0,0,...,0)",
+            "Negativa",
+            "Fracionária"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Sistemas lineares. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Para escalonar um sistema linear, utilizamos operações elementares nas:",
+          "options": [
+            "Variáveis do sistema",
+            "Linhas de equações",
+            "Apenas na última coluna",
+            "Raízes do sistema"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Sistemas lineares. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Se D = 0 e Dx = 0 e Dy = 0 na Regra de Cramer de um sistema linear, o sistema é:",
+          "options": [
+            "SPD",
+            "SPI ou SI",
+            "Exclusivamente SPD",
+            "Indefinido"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Sistemas lineares. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "No sistema {3x + 2y = 12, y = 3}, qual é o valor de x?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Sistemas lineares. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Resolva o sistema: x + y = 10 e x − y = 2. Qual é o valor de x?",
+          "options": [
+            "4",
+            "8",
+            "2",
+            "6"
+          ],
+          "correct": 3,
+          "exp": "Somando as duas equações: 2x = 12 → x = 6."
+        },
+        {
+          "q": "No sistema 2x + y = 7 e x − y = 2, qual é o valor de y?",
+          "options": [
+            "1",
+            "3",
+            "2",
+            "5"
+          ],
+          "correct": 0,
+          "exp": "Da segunda equação, x = y + 2. Substituindo na primeira: 2(y+2) + y = 7 → 3y = 3 → y = 1."
+        },
+        {
+          "q": "Um sistema linear é classificado como SPI (sistema possível e indeterminado) quando:",
+          "options": [
+            "Possui uma única solução",
+            "Possui infinitas soluções",
+            "Não possui solução",
+            "Possui exatamente duas soluções"
+          ],
+          "correct": 1,
+          "exp": "No SPI, as equações representam a mesma reta (ou plano), resultando em infinitas soluções em comum."
+        },
+        {
+          "q": "Resolva: 3x + 2y = 20 e x = y. Qual é o valor de x?",
+          "options": [
+            "5",
+            "3",
+            "4",
+            "8"
+          ],
+          "correct": 2,
+          "exp": "Substituindo x = y na primeira equação: 3x + 2x = 20 → 5x = 20 → x = 4."
+        },
+        {
+          "q": "Qual é a condição para que um sistema linear 2x2 seja SI (sistema impossível)?",
+          "options": [
+            "Retas coincidentes",
+            "Retas concorrentes",
+            "Retas perpendiculares",
+            "Retas paralelas e distintas"
+          ],
+          "correct": 3,
+          "exp": "Quando as retas são paralelas e distintas, elas nunca se cruzam, então o sistema não tem solução (é impossível)."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "Substituição isola uma incógnita e a coloca na outra equação.",
+          "Eliminação combina equações para cancelar uma variável.",
+          "Um sistema pode ter uma solução, infinitas soluções ou nenhuma solução.",
+          "Em sistemas 2×2, o determinante ajuda a verificar unicidade."
+        ],
+        "steps": [
+          "Escolha a variável mais fácil de isolar ou eliminar.",
+          "Substitua a solução nas equações originais para conferir.",
+          "Em problemas reais, defina as incógnitas e suas unidades antes de montar o sistema."
+        ],
+        "example": "Exemplo: x+y=10 e x−y=2. Somando, 2x=12, então x=6 e y=4."
+      }
+    },
+    {
+      "id": "2.4",
+      "year": "2",
+      "num": "4",
+      "title": "Análise Combinatória",
+      "summary": "A análise combinatória conta possibilidades sem precisar listar todas individualmente.",
+      "detail": "O princípio fundamental da contagem multiplica escolhas sucessivas. Exemplo: 3 camisetas e 2 calças produzem 3×2=6 combinações de roupa. Fatorial é o produto n·(n−1)·...·1 e, por definição, 0!=1.",
+      "questions": [
+        {
+          "q": "De quantas maneiras distintas 4 pessoas podem se organizar em uma fila indiana?",
+          "options": [
+            "12",
+            "16",
+            "24",
+            "48"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Combinatória. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Quantas comissões de 2 alunos podem ser formadas a partir de um grupo de 5 alunos?",
+          "options": [
+            "10",
+            "15",
+            "20",
+            "25"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Combinatória. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O valor de 5! (5 fatorial) é igual a:",
+          "options": [
+            "20",
+            "60",
+            "120",
+            "720"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Combinatória. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Quantos anagramas existem para a palavra AMOR?",
+          "options": [
+            "12",
+            "24",
+            "36",
+            "48"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Combinatória. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Para escolher um presidente e um vice-presidente numa chapa entre 6 candidatos, utilizamos:",
+          "options": [
+            "Combinação",
+            "Arranjo Simples",
+            "Permutação com Repetição",
+            "Média Aritmética"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Combinatória. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Quantas senhas de 3 algarismos distintos podemos formar usando os dígitos 1, 2, 3, 4 e 5?",
+          "options": [
+            "60",
+            "120",
+            "20",
+            "15"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Combinatória. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O valor do fatorial 0! por definição matemática é igual a:",
+          "options": [
+            "0",
+            "1",
+            "Indefinido",
+            "-1"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Combinatória. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Numa salada de frutas com 3 frutas escolhidas entre maçã, banana, uva, mamão e morango, usaremos:",
+          "options": [
+            "Permutação",
+            "Arranjo",
+            "Combinação",
+            "Matrizes"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Combinatória. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O número de anagramas da palavra MALA (que possui a letra A repetida 2 vezes) é dado por:",
+          "options": [
+            "4! = 24",
+            "4! / 2! = 12",
+            "4! / 3! = 4",
+            "2! · 2! = 4"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Combinatória. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O Principio Fundamental da Contagem (PFC) baseia-se na operação de:",
+          "options": [
+            "Adição",
+            "Multiplicação",
+            "Subtração",
+            "Divisão"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Combinatória. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "De quantas maneiras diferentes 4 pessoas podem se sentar em 4 cadeiras em fila?",
+          "options": [
+            "24",
+            "16",
+            "12",
+            "8"
+          ],
+          "correct": 0,
+          "exp": "É uma permutação simples de 4 elementos: 4! = 4×3×2×1 = 24."
+        },
+        {
+          "q": "Quantos anagramas possui a palavra 'AMOR'?",
+          "options": [
+            "12",
+            "24",
+            "6",
+            "4"
+          ],
+          "correct": 1,
+          "exp": "Como as 4 letras são distintas, o total de anagramas é 4! = 24."
+        },
+        {
+          "q": "De um grupo de 5 pessoas, quantas comissões de 2 pessoas podem ser formadas (a ordem não importa)?",
+          "options": [
+            "20",
+            "5",
+            "10",
+            "25"
+          ],
+          "correct": 2,
+          "exp": "É uma combinação: C(5,2) = 5!/(2!×3!) = 10."
+        },
+        {
+          "q": "Quantos números de 3 algarismos distintos podem ser formados usando os dígitos 1, 2, 3, 4, 5 (sem repetição)?",
+          "options": [
+            "125",
+            "20",
+            "15",
+            "60"
+          ],
+          "correct": 3,
+          "exp": "É um arranjo: A(5,3) = 5×4×3 = 60."
+        },
+        {
+          "q": "Um dado de 6 faces é lançado 2 vezes. Quantos resultados possíveis existem ao todo?",
+          "options": [
+            "36",
+            "12",
+            "6",
+            "64"
+          ],
+          "correct": 0,
+          "exp": "Pelo princípio multiplicativo: 6 possibilidades no primeiro lançamento × 6 no segundo = 36."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "Princípio multiplicativo: se uma etapa tem m opções e outra n, juntas há m·n possibilidades.",
+          "Permutação simples de n elementos: n!.",
+          "Arranjo de n elementos tomados p a p: n!/(n−p)!.",
+          "Combinação de n elementos tomados p a p: n!/[p!(n−p)!]."
+        ],
+        "steps": [
+          "Pergunte se a ordem importa.",
+          "Se todos os elementos são usados e a ordem importa, pense em permutação.",
+          "Se a ordem não importa, combinação costuma ser a ferramenta adequada."
+        ],
+        "example": "Exemplo: escolher 2 alunos entre 5 sem importar a ordem dá C(5,2)=10."
+      }
+    },
+    {
+      "id": "2.5",
+      "year": "2",
+      "num": "5",
+      "title": "Geometria Espacial",
+      "summary": "A geometria espacial estuda sólidos, áreas, volumes e relações entre medidas em três dimensões.",
+      "detail": "A relação de Euler para poliedros convexos é V−A+F=2, onde V é número de vértices, A de arestas e F de faces. Sempre confira unidades: comprimento em cm, área em cm² e volume em cm³.",
+      "questions": [
+        {
+          "q": "Qual é o volume de um cubo cujas arestas medem 3 cm?",
+          "options": [
+            "9 cm³",
+            "18 cm³",
+            "27 cm³",
+            "36 cm³"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Geometria espacial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Uma caixa d'água no formato de paralelepípedo tem 2m de comprimento, 1.5m de largura e 1m de altura. Qual o volume em m³?",
+          "options": [
+            "3 m³",
+            "4.5 m³",
+            "5 m³",
+            "6 m³"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Geometria espacial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Adotando π = 3, qual o volume de um cilindro com raio da base igual a 2 cm e altura de 5 cm?",
+          "options": [
+            "30 cm³",
+            "60 cm³",
+            "90 cm³",
+            "120 cm³"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Geometria espacial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A relação de Euler para poliedros convexos é dada por:",
+          "options": [
+            "V + F = A + 2",
+            "V + A = F + 2",
+            "F + A = V + 2",
+            "V + F + A = 2"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Geometria espacial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Um reservatório retangular de volume 3 m³ equivale a uma capacidade de quantos litros de água?",
+          "options": [
+            "300 Litros",
+            "3000 Litros",
+            "30000 Litros",
+            "30 Litros"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Geometria espacial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Uma pirâmide de base quadrada com lado da base 3 cm e altura 4 cm possui volume de:",
+          "options": [
+            "12 cm³",
+            "36 cm³",
+            "10 cm³",
+            "24 cm³"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Geometria espacial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual a área total da superfície de um cubo de aresta 2 cm?",
+          "options": [
+            "12 cm²",
+            "16 cm²",
+            "24 cm²",
+            "32 cm²"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Geometria espacial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Um poliedro possui 6 vértices e 8 faces. Quantas arestas ele tem?",
+          "options": [
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Geometria espacial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A esfera é um sólido geométrico de revolução obtido pela rotação completa de um:",
+          "options": [
+            "Triângulo retângulo",
+            "Semicírculo",
+            "Quadrado",
+            "Trapézio"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Geometria espacial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A fórmula do volume de uma esfera de raio R é dada por:",
+          "options": [
+            "V = 4·π·R²",
+            "V = (4/3)·π·R³",
+            "V = 2·π·R",
+            "V = π·R³"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Geometria espacial. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual é o volume de um cubo com aresta de 5 cm?",
+          "options": [
+            "25 cm³",
+            "125 cm³",
+            "15 cm³",
+            "75 cm³"
+          ],
+          "correct": 1,
+          "exp": "Volume do cubo = aresta³ = 5³ = 125 cm³."
+        },
+        {
+          "q": "Qual é o volume de um paralelepípedo retângulo com dimensões 4 cm × 3 cm × 2 cm?",
+          "options": [
+            "9 cm³",
+            "48 cm³",
+            "24 cm³",
+            "12 cm³"
+          ],
+          "correct": 2,
+          "exp": "Volume = comprimento × largura × altura = 4 × 3 × 2 = 24 cm³."
+        },
+        {
+          "q": "Um cilindro tem raio 3 cm e altura 10 cm. Qual é, aproximadamente, o seu volume? (use π ≈ 3,14)",
+          "options": [
+            "≈ 94,2 cm³",
+            "≈ 188,4 cm³",
+            "≈ 300 cm³",
+            "≈ 282,6 cm³"
+          ],
+          "correct": 3,
+          "exp": "V = π × r² × h = 3,14 × 9 × 10 = 282,6 cm³."
+        },
+        {
+          "q": "Quantas faces tem um icosaedro regular?",
+          "options": [
+            "20",
+            "12",
+            "8",
+            "30"
+          ],
+          "correct": 0,
+          "exp": "O icosaedro regular é um poliedro de Platão formado por 20 faces triangulares."
+        },
+        {
+          "q": "Qual é a área total (superfície) de um cubo de aresta 4 cm?",
+          "options": [
+            "64 cm²",
+            "96 cm²",
+            "24 cm²",
+            "48 cm²"
+          ],
+          "correct": 1,
+          "exp": "Área total = 6 × aresta² = 6 × 16 = 96 cm², pois o cubo tem 6 faces quadradas iguais."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "Prisma: V=A_base·h.",
+          "Cilindro: V=πr²h.",
+          "Pirâmide: V=A_base·h/3.",
+          "Cone: V=πr²h/3.",
+          "Esfera: V=4πr³/3."
+        ],
+        "steps": [
+          "Identifique o sólido antes de aplicar a fórmula.",
+          "Use unidades cúbicas para volume e quadradas para área.",
+          "Mantenha π simbólico até o final quando isso evitar arredondamentos desnecessários."
+        ],
+        "example": "Exemplo: um cilindro de raio 2 e altura 5 tem V=20π unidades cúbicas."
+      }
+    },
+    {
+      "id": "3.1",
+      "year": "3",
+      "num": "1",
+      "title": "Probabilidade Simples e Condicional",
+      "summary": "Probabilidade mede a chance de um evento acontecer. Em espaços equiprováveis, P(A)=casos favoráveis/casos possíveis.",
+      "detail": "A probabilidade condicional P(A|B)=P(A∩B)/P(B), com P(B)>0. Para eventos independentes, P(A∩B)=P(A)·P(B). Em problemas, primeiro descreva o espaço amostral e só depois conte os casos favoráveis.",
+      "questions": [
+        {
+          "q": "Ao lançar um dado honesto de 6 faces, qual é a probabilidade de obter um número primo?",
+          "options": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "2/3"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Probabilidade. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Uma urna contém 4 bolas vermelhas e 6 bolas azuis. Retirando uma bola ao acaso, qual a chance de ser azul?",
+          "options": [
+            "40%",
+            "50%",
+            "60%",
+            "70%"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Probabilidade. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Lançando duas moedas simultaneamente, qual a probabilidade de obter duas caras?",
+          "options": [
+            "1/4",
+            "1/2",
+            "3/4",
+            "1"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Probabilidade. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A soma das probabilidades de todos os eventos elementares de um espaço amostral é igual a:",
+          "options": [
+            "0",
+            "0,5",
+            "1",
+            "100"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Probabilidade. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Sorteando um número de 1 a 20, qual a probabilidade de ele ser múltiplo de 5?",
+          "options": [
+            "10%",
+            "20%",
+            "25%",
+            "30%"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Probabilidade. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Em um baralho padrão de 52 cartas, qual a chance de retirar um Ás?",
+          "options": [
+            "1/52",
+            "1/13",
+            "1/4",
+            "4/13"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Probabilidade. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A probabilidade de um evento impossível ocorrer é numericamente igual a:",
+          "options": [
+            "-1",
+            "0",
+            "0.01",
+            "1"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Probabilidade. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Se P(A) = 0,30, a probabilidade do evento complementar A' ocorrer é de:",
+          "options": [
+            "0,30",
+            "0,50",
+            "0,70",
+            "1,00"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Probabilidade. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Dois dados são lançados. Qual a probabilidade da soma dos pontos ser igual a 12?",
+          "options": [
+            "1/36",
+            "2/36",
+            "1/12",
+            "1/6"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Probabilidade. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A probabilidade condicional P(A|B) representa a chance de ocorrer o evento A sabendo que:",
+          "options": [
+            "O evento B já ocorreu",
+            "O evento A é impossível",
+            "B é independente de A",
+            "A e B são nulos"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Probabilidade. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Ao lançar um dado honesto de 6 faces, qual é a probabilidade de obter um número par?",
+          "options": [
+            "1/3",
+            "1/6",
+            "1/2",
+            "2/3"
+          ],
+          "correct": 2,
+          "exp": "Os números pares são 2, 4 e 6: 3 casos favoráveis em 6 possíveis, ou seja, 3/6 = 1/2."
+        },
+        {
+          "q": "Uma urna tem 4 bolas vermelhas e 6 azuis. Qual é a probabilidade de tirar uma bola vermelha?",
+          "options": [
+            "3/5",
+            "1/2",
+            "1/5",
+            "2/5"
+          ],
+          "correct": 3,
+          "exp": "São 4 bolas vermelhas em 10 no total: 4/10, que simplificado é 2/5."
+        },
+        {
+          "q": "Em um baralho de 52 cartas, qual é a probabilidade de tirar um Ás?",
+          "options": [
+            "1/13",
+            "1/52",
+            "1/4",
+            "4/13"
+          ],
+          "correct": 0,
+          "exp": "Há 4 ases em 52 cartas: 4/52, que simplificado é 1/13."
+        },
+        {
+          "q": "Dois dados são lançados. Qual é a probabilidade da soma dos dois resultados ser igual a 7?",
+          "options": [
+            "1/12",
+            "1/6",
+            "1/9",
+            "1/36"
+          ],
+          "correct": 1,
+          "exp": "Existem 6 combinações que somam 7 (1+6, 2+5, 3+4, 4+3, 5+2, 6+1) entre 36 possíveis: 6/36 = 1/6."
+        },
+        {
+          "q": "Sabendo que uma carta retirada de um baralho é uma figura (valete, dama ou rei), qual é a probabilidade condicional de ela ser de copas?",
+          "options": [
+            "1/3",
+            "1/12",
+            "1/4",
+            "1/13"
+          ],
+          "correct": 2,
+          "exp": "Existem 12 figuras no total e 3 delas são de copas (uma para cada figura). A probabilidade condicional é 3/12 = 1/4."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "0≤P(A)≤1.",
+          "Evento complementar: P(A^c)=1−P(A).",
+          "Probabilidade condicional: P(A|B)=P(A∩B)/P(B), se P(B)>0.",
+          "Se A e B são independentes, P(A∩B)=P(A)P(B)."
+        ],
+        "steps": [
+          "Defina o espaço amostral.",
+          "Verifique se os resultados são equiprováveis.",
+          "Não confunda “ou” com “e”: união e interseção representam eventos diferentes."
+        ],
+        "example": "Exemplo: ao lançar um dado justo, P(par)=3/6=1/2."
+      }
+    },
+    {
+      "id": "3.2",
+      "year": "3",
+      "num": "2",
+      "title": "Estatística",
+      "summary": "Estatística transforma dados em medidas que ajudam a comparar, resumir e interpretar informações.",
+      "detail": "A amplitude é máximo−mínimo. Variância mede a dispersão quadrática em relação à média e o desvio padrão é a raiz quadrada da variância. Quanto menor o desvio padrão, mais concentrados os dados estão em torno da média.",
+      "questions": [
+        {
+          "q": "Qual a média aritmética do conjunto de dados {4, 8, 12, 16}?",
+          "options": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Estatística. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Determine a Moda do seguinte rol: {2, 3, 5, 5, 7, 8, 5, 9}.",
+          "options": [
+            "3",
+            "5",
+            "7",
+            "Não há moda"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Estatística. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual a Mediana do conjunto {10, 20, 30, 40, 50}?",
+          "options": [
+            "20",
+            "30",
+            "35",
+            "40"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Estatística. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O Desvio Padrão é numericamente igual a:",
+          "options": [
+            "Raiz quadrada da Variância",
+            "O dobro da Média",
+            "A metade da Moda",
+            "O quadrado da Mediana"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Estatística. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A Mediana do conjunto de dados par {2, 4, 6, 8} é igual a:",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Estatística. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Se a variância de um conjunto de notas no SSA/ENEM for igual a 16, qual é o seu desvio padrão?",
+          "options": [
+            "2",
+            "4",
+            "8",
+            "32"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Estatística. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Um conjunto de dados que possui duas modas é classificado como:",
+          "options": [
+            "Amodal",
+            "Unimodal",
+            "Bimodal",
+            "Polimodal"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Estatística. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Para calcular a média ponderada de notas com pesos p1, p2, p3, dividimos a soma dos produtos dos valores pelos pesos por:",
+          "options": [
+            "Pela quantidade de notas",
+            "Pela soma dos pesos",
+            "Pela maior nota",
+            "Pelo número 10"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Estatística. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A amplitude de um conjunto de dados estatísticos é a diferença entre:",
+          "options": [
+            "O maior valor e o menor valor",
+            "A média e a mediana",
+            "A moda e a variância",
+            "O primeiro e o último termo"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Estatística. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Quanto menor for o desvio padrão de uma amostra, mais os dados estarão:",
+          "options": [
+            "Dispersos da média",
+            "Homogêneos/Próximos da média",
+            "Nulos",
+            "Incorretos"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Estatística. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual é a mediana do conjunto de dados: 3, 7, 9, 12, 15?",
+          "options": [
+            "7",
+            "12",
+            "15",
+            "9"
+          ],
+          "correct": 3,
+          "exp": "Com os dados já em ordem crescente e 5 valores, a mediana é o valor central: 9."
+        },
+        {
+          "q": "Qual é a moda do conjunto: 2, 4, 4, 5, 6, 4, 7?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "2"
+          ],
+          "correct": 0,
+          "exp": "O valor 4 aparece 3 vezes, mais que qualquer outro, então é a moda do conjunto."
+        },
+        {
+          "q": "A média de um conjunto de dados é 20. Um dos valores é 26. Qual é o valor absoluto do desvio desse valor em relação à média?",
+          "options": [
+            "46",
+            "6",
+            "20",
+            "4"
+          ],
+          "correct": 1,
+          "exp": "O desvio é a diferença entre o valor e a média: |26 − 20| = 6."
+        },
+        {
+          "q": "Em uma pesquisa com 40 pessoas, 25% preferem matemática. Quantas pessoas preferem matemática?",
+          "options": [
+            "25",
+            "15",
+            "10",
+            "20"
+          ],
+          "correct": 2,
+          "exp": "25% de 40 = 0,25 × 40 = 10 pessoas."
+        },
+        {
+          "q": "Qual é a amplitude do conjunto de dados: 12, 5, 19, 8, 15?",
+          "options": [
+            "19",
+            "5",
+            "24",
+            "14"
+          ],
+          "correct": 3,
+          "exp": "A amplitude é a diferença entre o maior e o menor valor: 19 − 5 = 14."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "Média aritmética = soma dos valores/número de valores.",
+          "Mediana é o valor central após ordenar os dados.",
+          "Moda é o valor que mais se repete.",
+          "Amplitude = maior valor−menor valor.",
+          "Desvio padrão mede a dispersão em torno da média."
+        ],
+        "steps": [
+          "Ordene os dados antes de procurar a mediana.",
+          "Escolha a medida de tendência central conforme o contexto.",
+          "Não interprete uma média sem observar a distribuição dos dados."
+        ],
+        "example": "Exemplo: em 2,4,4,10, a média é 5, a mediana é 4 e a moda é 4."
+      }
+    },
+    {
+      "id": "3.3",
+      "year": "3",
+      "num": "3",
+      "title": "Geometria Analítica",
+      "summary": "A geometria analítica usa coordenadas e álgebra para estudar pontos, retas e distâncias no plano.",
+      "detail": "A reta pode ser escrita como y=mx+q. O coeficiente angular é m=(y₂−y₁)/(x₂−x₁), quando x₂≠x₁. Na circunferência, (x−a)²+(y−b)²=r² representa centro C(a,b) e raio r.",
+      "questions": [
+        {
+          "q": "Qual é o ponto médio M do segmento cujos extremos são A(2, 4) e B(6, 8)?",
+          "options": [
+            "M(4, 6)",
+            "M(3, 5)",
+            "M(8, 12)",
+            "M(4, 4)"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Geometria analítica. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A distância entre os pontos A(0, 0) e B(3, 4) no plano cartesiano é:",
+          "options": [
+            "5 unidades",
+            "7 unidades",
+            "12 unidades",
+            "25 unidades"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Geometria analítica. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual é o centro C e o raio R da circunferência dada por (x - 2)² + (y - 5)² = 9?",
+          "options": [
+            "C(2, 5) e R = 3",
+            "C(-2, -5) e R = 9",
+            "C(2, 5) e R = 9",
+            "C(0, 0) e R = 3"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Geometria analítica. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Duas retas r e s são paralelas quando seus coeficientes angulares (m1 e m2) satisfazem:",
+          "options": [
+            "m1 = m2",
+            "m1 · m2 = -1",
+            "m1 + m2 = 0",
+            "m1 = -m2"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Geometria analítica. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O coeficiente angular m da reta que passa pelos pontos A(1, 2) e B(3, 6) é igual a:",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Geometria analítica. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Duas retas r e s são perpendiculares entre si quando o produto de seus coeficientes angulares for:",
+          "options": [
+            "0",
+            "1",
+            "-1",
+            "Infinito"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Geometria analítica. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A equação da reta reduzida tem a forma y = mx + q, onde 'q' representa o:",
+          "options": [
+            "Coeficiente Angular",
+            "Coeficiente Linear (Corte em Y)",
+            "Raio",
+            "Ponto Médio"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Geometria analítica. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Três pontos A, B e C estão colineares (na mesma reta) se o determinante formado por suas coordenadas for:",
+          "options": [
+            "Maior que zero",
+            "Igual a zero",
+            "Menor que zero",
+            "Igual a 1"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Geometria analítica. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A equação de uma circunferência centrada na origem C(0,0) e com raio R = 4 é:",
+          "options": [
+            "x² + y² = 4",
+            "x² + y² = 16",
+            "x + y = 4",
+            "(x-4)² + (y-4)² = 0"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Geometria analítica. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A área de um triângulo no plano cartesiano com vértices conhecidos pode ser calculada pelo módulo de:",
+          "options": [
+            "Metade do Determinante das coordenadas",
+            "Soma dos lados",
+            "Produto dos coeficientes",
+            "Raio ao quadrado"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Geometria analítica. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual é a distância entre os pontos A(1, 2) e B(4, 6)?",
+          "options": [
+            "5",
+            "7",
+            "25",
+            "3"
+          ],
+          "correct": 0,
+          "exp": "d = √((4−1)² + (6−2)²) = √(9 + 16) = √25 = 5."
+        },
+        {
+          "q": "Qual é o ponto médio do segmento com extremidades A(2, 4) e B(8, 10)?",
+          "options": [
+            "(10, 14)",
+            "(5, 7)",
+            "(3, 3)",
+            "(6, 6)"
+          ],
+          "correct": 1,
+          "exp": "O ponto médio é a média das coordenadas: ((2+8)/2, (4+10)/2) = (5, 7)."
+        },
+        {
+          "q": "Qual é o coeficiente angular da reta que passa pelos pontos A(1, 2) e B(3, 8)?",
+          "options": [
+            "6",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "exp": "m = (8 − 2)/(3 − 1) = 6/2 = 3."
+        },
+        {
+          "q": "Qual é a equação reduzida da reta que passa por (0, 5) com coeficiente angular igual a 2?",
+          "options": [
+            "y = 5x + 2",
+            "y = 2x − 5",
+            "y = -2x + 5",
+            "y = 2x + 5"
+          ],
+          "correct": 3,
+          "exp": "Na forma y = mx + b, m = 2 é o coeficiente angular e b = 5 é onde a reta cruza o eixo y (dado o ponto (0,5))."
+        },
+        {
+          "q": "Qual é a equação da circunferência com centro em (0,0) e raio 6?",
+          "options": [
+            "x² + y² = 36",
+            "x² + y² = 6",
+            "x² + y² = 12",
+            "(x−6)² + (y−6)² = 36"
+          ],
+          "correct": 0,
+          "exp": "A equação da circunferência centrada na origem é x² + y² = r². Com r = 6, temos x² + y² = 36."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "Distância: d=√[(x₂−x₁)²+(y₂−y₁)²].",
+          "Ponto médio: M=((x₁+x₂)/2,(y₁+y₂)/2).",
+          "Coeficiente angular: m=(y₂−y₁)/(x₂−x₁), quando x₂≠x₁.",
+          "Reta pode ser escrita como y=mx+b."
+        ],
+        "steps": [
+          "Desenhe ou imagine o plano cartesiano.",
+          "Use diferenças com a mesma orientação para x e y.",
+          "Confira sinais e quadrantes."
+        ],
+        "example": "Exemplo: entre (1,2) e (4,6), m=4/3 e d=5."
+      }
+    },
+    {
+      "id": "3.4",
+      "year": "3",
+      "num": "4",
+      "title": "Números Complexos",
+      "summary": "Números complexos ampliam os números reais com a unidade imaginária i, definida por i²=−1.",
+      "detail": "O conjugado de a+bi é a−bi. O módulo é |z|=√(a²+b²), interpretado como a distância do ponto (a,b) à origem no plano de Argand-Gauss. As potências de i se repetem em ciclos de quatro: i, −1, −i, 1.",
+      "questions": [
+        {
+          "q": "Qual é o valor da unidade imaginária i elevada ao quadrado (i²)?",
+          "options": [
+            "1",
+            "-1",
+            "0",
+            "i"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Complexos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Dado o número complexo z = 3 + 4i, qual é a sua parte real (Re) e parte imaginária (Im)?",
+          "options": [
+            "Re=3 e Im=4",
+            "Re=4 e Im=3",
+            "Re=3 e Im=4i",
+            "Re=7 e Im=0"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Complexos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O conjugado do número complexo z = 5 - 2i é igual a:",
+          "options": [
+            "5 + 2i",
+            "-5 - 2i",
+            "-5 + 2i",
+            "2 - 5i"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Complexos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual o módulo |z| do número complexo z = 3 + 4i?",
+          "options": [
+            "5",
+            "7",
+            "25",
+            "12"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Complexos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Somando os números complexos z1 = 2 + 3i e z2 = 4 - i, obtemos:",
+          "options": [
+            "6 + 2i",
+            "6 + 4i",
+            "8 + 2i",
+            "6 - 2i"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Complexos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O valor da potência de i^4 é igual a:",
+          "options": [
+            "1",
+            "-1",
+            "i",
+            "-i"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Complexos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O plano geométrico utilizado para representar graficamente os números complexos é o plano de:",
+          "options": [
+            "Descartes",
+            "Argand-Gauss",
+            "Euclides",
+            "Newton"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Complexos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Efetuando o produto (2 + i)(2 - i), o resultado é o número real:",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "2 - i²"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Complexos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Um número complexo z = a + bi com parte real nula (a = 0 e b ≠ 0) é chamado de:",
+          "options": [
+            "Real puro",
+            "Imaginário puro",
+            "Nulo",
+            "Conjugado"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Complexos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "A forma trigonométrica (ou polar) de um número complexo é expressa por:",
+          "options": [
+            "z =",
+            "z",
+            "· (cos θ + i · sen θ)",
+            "z = a · b · i"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Complexos. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual é o resultado de (3 + 2i) + (1 − 5i)?",
+          "options": [
+            "4 + 3i",
+            "4 − 3i",
+            "2 + 7i",
+            "2 − 7i"
+          ],
+          "correct": 1,
+          "exp": "Some as partes reais (3+1=4) e as partes imaginárias (2i − 5i = -3i): resultado 4 − 3i."
+        },
+        {
+          "q": "Qual é o valor de i²?",
+          "options": [
+            "1",
+            "i",
+            "-1",
+            "-i"
+          ],
+          "correct": 2,
+          "exp": "Por definição, a unidade imaginária i satisfaz i² = -1."
+        },
+        {
+          "q": "Qual é o módulo do número complexo z = 3 + 4i?",
+          "options": [
+            "7",
+            "25",
+            "1",
+            "5"
+          ],
+          "correct": 3,
+          "exp": "O módulo é |z| = √(3² + 4²) = √(9+16) = √25 = 5."
+        },
+        {
+          "q": "Qual é o resultado de (2 + i) × (1 − i)?",
+          "options": [
+            "3 − i",
+            "3 + i",
+            "1 − i",
+            "1 + i"
+          ],
+          "correct": 0,
+          "exp": "Expandindo: 2 − 2i + i − i² = 2 − i − (−1) = 2 − i + 1 = 3 − i."
+        },
+        {
+          "q": "Qual é o conjugado do número complexo z = -5 + 2i?",
+          "options": [
+            "5 + 2i",
+            "-5 − 2i",
+            "-5 + 2i",
+            "5 − 2i"
+          ],
+          "correct": 1,
+          "exp": "O conjugado mantém a parte real e inverte o sinal da parte imaginária: -5 − 2i."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "Forma algébrica: z=a+bi.",
+          "Parte real é a e parte imaginária é b.",
+          "Conjugado de a+bi é a−bi.",
+          "Módulo: |z|=√(a²+b²).",
+          "Potências de i se repetem a cada quatro expoentes."
+        ],
+        "steps": [
+          "Separe termos reais e imaginários.",
+          "Use i²=−1 sempre que aparecer uma potência de i.",
+          "Para dividir complexos, multiplique numerador e denominador pelo conjugado do denominador."
+        ],
+        "example": "Exemplo: (2+3i)+(1−i)=3+2i."
+      }
+    },
+    {
+      "id": "3.5",
+      "year": "3",
+      "num": "5",
+      "title": "Polinômios e Equações Polinomiais",
+      "summary": "Polinômios são expressões algébricas formadas por termos com expoentes inteiros não negativos.",
+      "detail": "Pelo Teorema do Resto, o resto da divisão de P(x) por (x−a) é P(a). Para um polinômio quadrático x²+bx+c, as relações de Girard dão soma das raízes =−b e produto =c. Polinômios reais podem ter raízes complexas em pares conjugados.",
+      "questions": [
+        {
+          "q": "Qual é o grau do polinômio P(x) = 4x³ - 2x² + 7x - 1?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Polinômios. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Dado P(x) = x³ - 2x + 4, qual é o valor numérico de P(2)?",
+          "options": [
+            "4",
+            "6",
+            "8",
+            "10"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Polinômios. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Pelo Teorema do Resto, o resto da divisão de P(x) = x² - 5x + 6 por (x - 1) é:",
+          "options": [
+            "P(1) = 2",
+            "P(1) = 0",
+            "P(1) = -2",
+            "P(1) = 6"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Polinômios. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Se x = 2 é uma raiz do polinômio P(x), então o valor de P(2) é obrigatoriamente:",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "Indeterminado"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Polinômios. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O dispositivo prático utilizado para dividir um polinômio por um binômio do tipo (x - a) chama-se:",
+          "options": [
+            "Briot-Ruffini",
+            "Laplace",
+            "Sarrus",
+            "Gauss"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Polinômios. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Um polinômio de grau n possui exatamente quantas raízes (reais ou complexas)?",
+          "options": [
+            "n - 1",
+            "n",
+            "n + 1",
+            "2n"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Polinômios. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Nas relações de Girard para x² + bx + c = 0 com raízes x1 e x2, a soma x1 + x2 é igual a:",
+          "options": [
+            "-b",
+            "b",
+            "c",
+            "-c"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Polinômios. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Se um polinômio com coeficientes reais possui a raíz complexa z = 2 + 3i, ele obrigatoriamente também possui a raiz:",
+          "options": [
+            "z = 2 - 3i",
+            "z = -2 + 3i",
+            "z = -2 - 3i",
+            "z = 3 + 2i"
+          ],
+          "correct": 0,
+          "exp": "Gabarito: A. Resolva destacando primeiro o conceito de Polinômios. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "O termo independente do polinômio P(x) = x³ - 4x² + 5x - 8 é:",
+          "options": [
+            "-4",
+            "5",
+            "-8",
+            "1"
+          ],
+          "correct": 2,
+          "exp": "Gabarito: C. Resolva destacando primeiro o conceito de Polinômios. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Dois polinômios P(x) e Q(x) são ditos idênticos quando:",
+          "options": [
+            "Têm o mesmo grau apenas",
+            "Seus coeficientes correspondentes são iguais",
+            "Possuem pelo menos uma raiz igual em comum",
+            "A soma de seus termos resulta em zero"
+          ],
+          "correct": 1,
+          "exp": "Gabarito: B. Resolva destacando primeiro o conceito de Polinômios. Depois, substitua os dados na definição ou fórmula adequada e confira se a unidade e o sinal fazem sentido."
+        },
+        {
+          "q": "Qual é o grau do polinômio p(x) = 4x³ − 2x² + 7x − 1?",
+          "options": [
+            "4",
+            "2",
+            "3",
+            "1"
+          ],
+          "correct": 2,
+          "exp": "O grau do polinômio é o maior expoente da variável, nesse caso 3 (termo 4x³)."
+        },
+        {
+          "q": "Dado p(x) = x² − 3x + 2, qual é o valor de p(2)?",
+          "options": [
+            "4",
+            "2",
+            "-2",
+            "0"
+          ],
+          "correct": 3,
+          "exp": "Substituindo x = 2: p(2) = 4 − 6 + 2 = 0."
+        },
+        {
+          "q": "Quais são as raízes de p(x) = x² − 9?",
+          "options": [
+            "x = 3 e x = -3",
+            "x = 9 e x = -9",
+            "x = 3 apenas",
+            "x = 0"
+          ],
+          "correct": 0,
+          "exp": "x² − 9 = 0 → x² = 9 → x = 3 ou x = -3, pois ambos elevados ao quadrado resultam em 9."
+        },
+        {
+          "q": "Some os polinômios: (2x² + 3x − 1) + (x² − 5x + 4). Qual é o resultado?",
+          "options": [
+            "3x² + 8x − 5",
+            "3x² − 2x + 3",
+            "x² − 2x + 3",
+            "3x² − 2x − 3"
+          ],
+          "correct": 1,
+          "exp": "Some os termos semelhantes: (2x²+x²) + (3x−5x) + (−1+4) = 3x² − 2x + 3."
+        },
+        {
+          "q": "Ao dividir p(x) = x³ − 1 por (x − 1), qual é o resto?",
+          "options": [
+            "1",
+            "-1",
+            "0",
+            "2"
+          ],
+          "correct": 2,
+          "exp": "Pelo teorema do resto, o resto da divisão por (x − 1) é p(1) = 1 − 1 = 0."
+        }
+      ],
+      "theory": {
+        "sections": [
+          "Grau é o maior expoente com coeficiente não nulo.",
+          "Raiz de p(x) é um valor r para o qual p(r)=0.",
+          "Se r é raiz, então (x−r) é fator do polinômio.",
+          "Teorema do resto: o resto da divisão de p(x) por x−a é p(a)."
+        ],
+        "steps": [
+          "Organize os termos por grau.",
+          "Procure raízes simples antes de técnicas mais avançadas.",
+          "Depois de fatorar, confira multiplicando novamente."
+        ],
+        "example": "Exemplo: p(x)=x²−5x+6=(x−2)(x−3), portanto as raízes são 2 e 3."
+      }
+    }
+  ]
+}
